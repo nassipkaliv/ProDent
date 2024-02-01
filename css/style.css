@@ -1,5 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/winston');
 @import url(https://db.onlinewebfonts.com/c/3114dbb517b7c67b80e322545c5f565f?family=Averta+Demo+PE+Regular);
+@import url('https://fonts.cdnfonts.com/css/avrile-serif');
+
 
 :root {
   --black: #1D2023;
@@ -171,4 +173,136 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+.about {
+  margin-top: 150px;
+}
+
+.about .title {
+  color: var(--black, #1D2023);
+  font-family: 'Winston', sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 60px */
+}
+
+.about .text {
+  color: var(--black, #1D2023);
+  font-family: 'Avrile Serif', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.left-block-about {
+  gap: 40px;
+}
+
+.about-card .big-text {
+  color: var(--blue, #4797FF);
+  font-family: 'Winston', sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 36px */
+  margin-bottom: 10px;
+}
+
+.about-card .big-text span {
+  font-size: 50px;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 34px;
+  background: var(--white, #FFF);
+  margin-bottom: 20px;
+}
+
+.about-card .small-text {
+  color: var(--black, #1D2023);
+  font-family: "Averta Demo PE Regular";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.team {
+  margin-top: 140px;
+}
+
+.team .title-h1 {
+  margin-bottom: 70px;
+}
+
+.team-card {
+  border-radius: 34px;
+  background: var(--white, #FFF);
+
+  /* ds */
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  border-top-left-radius: 34px;
+  border-top-right-radius: 34px;
+}
+
+.card-title {
+  color: var(--black, #1D2023);
+  font-family: 'Winston', sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 24px */
+}
+
+.card-info {
+  color: var(--black, #1D2023);
+  font-family: "Averta Demo PE Regular";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+}
+
+.card-info span {
+  visibility: hidden;
+}
+
+.card-stazh {
+  color: var(--black, #1D2023);
+  font-family: 'Winston', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%; /* 19.2px */
+}
+
+.card-stazh span {
+  font-weight: 500;
+}
+
+.card-btn {
+  border-radius: 24px;
+  border: 1px solid var(--blue, #4797FF);
+  background: var(--blue, #4797FF);
+  color: var(--white, #FFF);
+  font-family: 'Winston', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 21.6px */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
