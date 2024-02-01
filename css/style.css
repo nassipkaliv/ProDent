@@ -5,7 +5,7 @@
 
 :root {
   --black: #1D2023;
-  -blue: #4797FF;
+  --blue: #4797FF;
   --green: #26D09B;
   --yellow: #FFD747;
   --white: #FFF;
@@ -305,4 +305,122 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+
+.contacts {
+  margin-top: 100px;
+}
+
+.contacts .row {
+  gap: 20px;
+}
+
+.contact-card {
+  border-radius: 34px;
+  background: #97A6BB;
+  width: 48%;
+}
+
+.contact-card.left {
+  padding: 40px 40px 0px 40px;
+  background: url("../assets/img/contact1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact-card.right {
+  background: url("../assets/img/contact2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact-title {
+  color: #FFF;
+  font-family: 'Winston', sans-serif;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 45.6px */
+}
+
+.form-control {
+  border-radius: 14px;
+  background: var(--white, #FFF);
+  color: var(--black, #1D2023);
+  font-family: "Averta Demo PE Regular";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.form-control::placeholder {
+  color: #D1D1D1;
+}
+
+label {
+  color: var(--white, #FFF);
+  font-family: "Averta Demo PE Regular";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.submit-btn {
+  border-radius: 14px;
+  background: var(--yellow, #FFCE22);
+  color: var(--black, #1D2023);
+  font-family: 'Winston', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 21.6px */
+  text-align: center;
+  padding: 16px;
+}
+
+.sogl {
+  color: var(--white, #FFF);
+  text-align: center;
+  font-family: "Averta Demo PE Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contact-card.right {
+  padding: 70px 44px;
+}
+
+.doc-title {
+  color: #FFF;
+  font-family: 'Winston', sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 36px */
+}
+
+.doc-btn {
+  border-radius: 14px;
+  background: #EF2434;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 100px;
+  color: var(--white, #FFF);
+  font-family: 'Winston', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 21.6px */
+  margin-top: 56px;
+}
+
+.doc-img {
+  position: absolute;
+  top: -300px;
+  right: -450px;
 }
