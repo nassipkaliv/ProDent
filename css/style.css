@@ -624,8 +624,148 @@ label {
 
 .location {
   margin-top: 180px;
+  margin-bottom: 120px;
 }
 
 .location-card {
   padding: 10px 10px 10px 30px;
+  background: var(--lite-blue, #EFF9FF);
+}
+
+.location-title {
+  color: rgb(29, 32, 35);
+  font-family: 'Winston', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0%;
+  display: flex;
+  align-items: center;
+}
+
+.location-subtitle {
+  cursor: pointer;
+  color: rgb(29, 32, 35);
+  font-family: 'Averta Demo PE Regular';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  border-radius: 1px;
+  background: rgb(71, 151, 255);
+  margin-top: 25px;
+}
+
+.option-row {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.option {
+  border-radius: 23px;
+  /* blue */
+  background: rgb(71, 151, 255);
+  padding: 6px 20px 6px 20px;
+  color: rgb(255, 255, 255);
+  font-family: 'Averta Demo PE Regular';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.second-row {
+  gap: 12px;
+}
+
+.footer-logo {
+  margin-bottom: 30px;
+}
+
+.footer-contact {
+  color: var(--blue);
+  font-family: 'Winston', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+
+.footer-description {
+  color: rgb(168, 166, 166);
+  font-family: 'Winston', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+.rating-img {
+  margin-top: 30px;
+}
+
+.footer-link {
+  color: var(--black);
+  font-family: 'Winston', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0%;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.footer-small-link {
+  cursor: pointer;
+  color: var(--black);
+  font-family: 'Averta Demo PE Regular';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.footer-small-link {
+  display: flex;
+  cursor: pointer;
+  color: var(--black);
+  font-family: 'Averta Demo PE Regular';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  transition: all 0.3s ease; /* Add a smooth transition for a smoother hover effect */
+}
+
+.footer-small-link:hover {
+  border-radius: 100px;
+  background: rgb(71, 151, 255);
+  color: #fff;
+}
+
+.footer-row {
+  gap: 80px;
+}
+
+.footer-line {
+  width: 100%;
+  height: 1px;
+  background: var(--black);
+  margin-top: 30px;
+}
+
+.footer-info {
+  color: var(--black);
+  font-family: 'Winston', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
 }
