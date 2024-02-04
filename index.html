@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
@@ -238,11 +238,53 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
+    <div class="swiper ourservicemobile-swiper d-none">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="service-card">
+              <div class="ourservice-title text-center">Лечение кариеса</div>
+              <img class="img-fluid" src="assets/img/service1.png">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="ourservice-title text-center">Хирургия и удаление</div>
+            <img class="img-fluid" src="assets/img/service2.png">
+          </div>
+          <div class="swiper-slide">
+            <div class="ourservice-title text-center">Имплантация</div>
+            <img class="img-fluid" src="assets/img/service3.png">
+          </div>
+          <div class="swiper-slide">
+            <div class="ourservice-title text-center">Детская стоматология</div>
+            <img class="img-fluid" src="assets/img/service4.png">
+          </div>
+          <div class="swiper-slide">
+            <div class="service-card">
+              <div class="ourservice-title text-center">Лечение кариеса</div>
+              <img class="img-fluid" src="assets/img/service1.png">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="ourservice-title text-center">Хирургия и удаление</div>
+            <img class="img-fluid" src="assets/img/service2.png">
+          </div>
+          <div class="swiper-slide">
+            <div class="ourservice-title text-center">Имплантация</div>
+            <img class="img-fluid" src="assets/img/service3.png">
+          </div>
+          <div class="swiper-slide">
+            <div class="ourservice-title text-center">Детская стоматология</div>
+            <img class="img-fluid" src="assets/img/service4.png">
+          </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
   </div>
 
-  <div class="container about">
+  <div class="container about desktop">
     <div class="row">
-      <div class="col-6 left-block-about d-flex flex-column justify-content-between">
+      <div class="col-lg-6 col-md-12 left-block-about d-flex flex-column justify-content-between">
         <h1 class="title">
           Стоматологическая клиника в Реутове
         </h1>
@@ -250,8 +292,8 @@
           Мы предлагает полный спектр услуг — хирургия, имплантология, ортодонтия, ортопедия, лечение кариеса и его осложнений с использованием операционного микроскопа, отбеливание, детский прием
         </p>
         <div>
-          <button class="btn cst-btn pe-0 py-0">
-            Подробнее о компании
+          <button class="btn cst-btn download-btn">
+            <div class="cst-btn-text">Подробнее о компании</div>
             <svg class="cst-btn-svg" xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
               <circle cx="27" cy="27" r="27" fill="#4797FF"/>
               <path d="M34.0607 28.0607C34.6464 27.4749 34.6464 26.5251 34.0607 25.9393L24.5147 16.3934C23.9289 15.8076 22.9792 15.8076 22.3934 16.3934C21.8076 16.9792 21.8076 17.9289 22.3934 18.5147L30.8787 27L22.3934 35.4853C21.8076 36.0711 21.8076 37.0208 22.3934 37.6066C22.9792 38.1924 23.9289 38.1924 24.5147 37.6066L34.0607 28.0607ZM32 28.5H33V25.5H32V28.5Z" fill="white"/>
@@ -259,7 +301,7 @@
           </button>
         </div>
       </div>
-      <div class="col-6 right-block-about d-flex align-items-center">
+      <div class="col-lg-6 col-md-12 right-block-about d-flex align-items-center">
         <div class="row d-flex align-items-center">
           <div class="col-6 about-card p-4">
             <div class="big-text">
@@ -298,9 +340,66 @@
     </div>
   </div>
 
+  <div class="container about mobile d-none">
+    <div class="row px-2">
+      <div class="col-lg-6 col-md-12 left-block-about d-flex flex-column justify-content-between">
+        <h1 class="title">
+          Стоматологическая клиника в Реутове
+        </h1>
+        <p class="text">
+          Мы предлагает полный спектр услуг — хирургия, имплантология, ортодонтия, ортопедия, лечение кариеса и его осложнений с использованием операционного микроскопа, отбеливание, детский прием
+        </p>
+      </div>
+      <div class="col-lg-6 col-md-12 right-block-about d-flex align-items-center">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-6 col-md-12 about-card p-4 d-flex align-items-center justify-content-center">
+            <div class="big-text">
+              <span>5+</span> лет
+            </div>
+            <div class="small-text">
+              лечим ваши зубы
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 about-card d-flex align-items-center justify-content-center">
+            <div class="big-text">
+              <span>1000+</span>
+            </div>
+            <div class="small-text">
+              довольных клиентов ежегодно
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 about-card d-flex align-items-center justify-content-center">
+            <div class="big-text">
+              <span>12</span> лет
+            </div>
+            <div class="small-text">
+              средний опыт наших специалистов
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 about-card d-flex align-items-center justify-content-center">
+            <div class="big-text">
+              <span>9/10</span>
+            </div>
+            <div class="small-text">
+              пациентов возвращаются к нам
+            </div>
+          </div>
+          <button class="btn cst-btn download-btn">
+            <div class="cst-btn-text">Подробнее о компании</div>
+            <svg class="cst-btn-svg" xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
+              <circle cx="27" cy="27" r="27" fill="#4797FF"/>
+              <path d="M34.0607 28.0607C34.6464 27.4749 34.6464 26.5251 34.0607 25.9393L24.5147 16.3934C23.9289 15.8076 22.9792 15.8076 22.3934 16.3934C21.8076 16.9792 21.8076 17.9289 22.3934 18.5147L30.8787 27L22.3934 35.4853C21.8076 36.0711 21.8076 37.0208 22.3934 37.6066C22.9792 38.1924 23.9289 38.1924 24.5147 37.6066L34.0607 28.0607ZM32 28.5H33V25.5H32V28.5Z" fill="white"/>
+            </svg>
+          </button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
   <div class="container team">
     <h1 class="title-h1">Наши специалисты</h1>
-    <div class="swiper ourservice-swiper">
+    <div class="swiper ourteam-swiper">
       <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="card team-card">
@@ -410,6 +509,7 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
+    
   </div>
 
   <div class="container contacts">

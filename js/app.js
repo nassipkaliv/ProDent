@@ -13,24 +13,49 @@ const swiper = new Swiper('.sample-slider', {
 });
 
 const ourServiceSwiper = new Swiper('.ourservice-swiper', {
-  loop: true,                         //loop
-  slidesPerView: 4,                   //number of slides to show            //put acctive slide center
-  spaceBetween: 17,                   //space between slides 
-  pagination: {                       //pagination（dots）
-      el: '.swiper-pagination',
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 17,
+  pagination: {
+    el: '.swiper-pagination',
   },
-  navigation: {                       //navigation（arrows）
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
+});
 
+const ourServiceMobileSwiper = new Swiper('.ourservicemobile-swiper', {
+  loop: true,
+  slidesPerView: 2,
+  spaceBetween: 12,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+const ourTeamSwiper = new Swiper('.ourteam-swiper', {
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 17,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   breakpoints: {
     768: {
       slidesPerView: 2,
-      spaceBetween: 12,
     }
   }
-})
+});
+
 
 var mobileSlider = new Swiper(".mobileSlider", {
   loop: true,

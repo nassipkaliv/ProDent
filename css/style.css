@@ -149,7 +149,7 @@ body {
 }
 
 .cst-btn-text {
-  margin-right: px;
+  margin-right: 60px;
   margin-left: 20px;
 }
 
@@ -779,7 +779,7 @@ label {
   line-height: 20px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .navbar-mobile {
     display: flex !important; 
   }
@@ -854,4 +854,48 @@ label {
     margin-left: 45px;
   }
 
+  .ourservice {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .ourservice .title-h1 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 35px;
+    margin-bottom: 50px;
+  }
+
+  .ourservice-swiper {
+    display: none !important;
+  }
+
+  .ourservicemobile-swiper {
+    display: block !important;
+  }
+  
+  .about.desktop {
+    display: none !important;
+  }
+
+  .about.mobile {
+    display: flex !important;
+  }
+  
+  .about {
+    margin-top: 80px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .about .title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .about .text {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+  }
 }
