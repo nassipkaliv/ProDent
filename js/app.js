@@ -84,3 +84,32 @@ var mobileSlider = new Swiper(".mobileSlider", {
   },
 });
 
+
+$('#collapseExample').on('show.bs.collapse', function () {
+  // Hide the original SVG
+  $('#collapseIcon').hide();
+  // Show the modified SVG
+  $('#modifiedIcon').show();
+});
+
+$('#collapseExample').on('hide.bs.collapse', function () {
+  // Show the original SVG
+  $('#collapseIcon').show();
+  // Hide the modified SVG
+  $('#modifiedIcon').hide();
+});
+
+
+$('#collapseExample2').on('show.bs.collapse', function () {
+  // Hide the original SVG
+  $('#collapseIcon2').hide();
+  // Show the modified SVG
+  $('#modifiedIcon2').show();
+});
+
+$('#collapseExample2').on('hide.bs.collapse', function () {
+  // Show the original SVG
+  $('#collapseIcon2').show();
+  // Hide the modified SVG
+  $('#modifiedIcon2').hide();
+});

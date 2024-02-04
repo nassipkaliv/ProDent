@@ -1092,4 +1092,24 @@ label {
     margin-bottom: 20px;
   }
 
+  .footer-container {
+    display: none !important;
+  }
+
+  .footer.desktop {
+    display: none !important;
+  }
+
+  .footer-line.desktop {
+    display: none !important;
+  }
+
+  .footer-mobile {
+    display: block !important;
+  }
+
+  .footer-info {
+    font-size: 14px;
+  }
+
 }
