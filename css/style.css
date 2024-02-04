@@ -927,6 +927,10 @@ label {
     display: block !important;
   }
 
+  .ourservice-title {
+    font-size: 18px;
+  }
+
   .card-title {
     font-size: 20px;
   }
@@ -969,6 +973,87 @@ label {
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
+
+  .reasons {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+
+  .reasons-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .reasons-card {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 0 !important;
+  }
+
+  .reason-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .reason-title {
+    font-size: 22px;
+  }
+
+  .reason-description {
+    font-size: 18px;
+    width: 85%;
+  }
+
+  .video {
+    margin-top: 80px;
+  }
+
+  .video-title {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 35px;
+    margin-bottom: 30px;
+  }
+
+  .video-youtube {
+    height: 200px !important;
+  }
+
+  .sales {
+    margin-top: 80px;
+  }
+
+  .sales .title {
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .desktop-sales {
+    display: none !important;
+  }
+
+  .sales-swiper {
+    display: block !important;
+  }
+
+  .sale-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .big-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .date-title {
+    text-align: center;
+  }
+
 
 
 }
