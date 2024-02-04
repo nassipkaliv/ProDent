@@ -56,6 +56,18 @@ const ourTeamSwiper = new Swiper('.ourteam-swiper', {
   }
 });
 
+const ourTeamMobileSwiper = new Swiper('.ourteammobile-swiper', {
+  loop: true,
+  slidesPerView: 1,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 
 var mobileSlider = new Swiper(".mobileSlider", {
   loop: true,
