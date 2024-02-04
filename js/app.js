@@ -1,16 +1,16 @@
 const swiper = new Swiper('.sample-slider', {
-  loop: true,                         //loop
-  slidesPerView: 1.2,                   //number of slides to show
-  centeredSlides : true,              //put acctive slide center
-  spaceBetween: 40,                   //space between slides 
-  pagination: {                       //pagination（dots）
-      el: '.swiper-pagination',
+  loop: true,
+  slidesPerView: 1.2,
+  centeredSlides: true,
+  spaceBetween: 40,
+  pagination: {
+    el: '.swiper-pagination',
   },
-  navigation: {                       //navigation（arrows）
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
-})
+});
 
 const ourServiceSwiper = new Swiper('.ourservice-swiper', {
   loop: true,                         //loop
@@ -23,4 +23,20 @@ const ourServiceSwiper = new Swiper('.ourservice-swiper', {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
   },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 12,
+    }
+  }
 })
+
+var mobileSlider = new Swiper(".mobileSlider", {
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+

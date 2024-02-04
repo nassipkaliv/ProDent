@@ -769,3 +769,44 @@ label {
   font-weight: 500;
   line-height: 20px;
 }
+
+@media only screen and (max-width: 767px) {
+  .navbar-mobile {
+    display: flex !important; 
+  }
+
+  .navbar-menu {
+    display: none !important;
+  }
+
+  .navbar-first {
+    display: none !important;
+  }
+
+  .sample-slider {
+    display:  none !important;
+  }
+
+  .mobileSlider {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobileSlider .swiper-slide {
+    border-radius: 10px;
+    background: rgb(217, 217, 217);
+    height: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobileSlider-text {
+    color: rgb(0, 0, 0);
+    font-family: 'Winston', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+}

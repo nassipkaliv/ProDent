@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-first navbar-expand-lg">
     <div class="container justify-content-start">
       <a class="navbar-brand" href="#">
         <img class="img-fluid logo" src="assets/img/logo.png">
@@ -122,6 +122,29 @@
     </div>
   </nav>
 
+  <nav class="navbar-mobile navbar-expand-lg  d-none justify-content-between py-4 px-2">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+        <svg width="36.000000" height="22.000000" viewBox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs/>
+          <rect id="Rectangle 264" y="10.000000" rx="1.000000" width="36.000000" height="2.000000" fill="#4797FF" fill-opacity="1.000000"/>
+          <rect id="Rectangle 267" rx="1.000000" width="36.000000" height="2.000000" fill="#4797FF" fill-opacity="1.000000"/>
+          <rect id="Rectangle 265" y="20.000000" rx="1.000000" width="36.000000" height="2.000000" fill="#4797FF" fill-opacity="1.000000"/>
+        </svg>        
+      </span>
+    </button>
+    <img class="mx-auto" width="150px" height="32px" src="assets/img/footer-logo.png">
+    <button class="btn border-0">
+      <svg width="24.000000" height="26.887939" viewBox="0 0 24 26.8879" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs/>
+        <path id="Vector" d="M1.28369 2.99072C0.697754 3.19214 0.200684 3.72632 0.0415039 4.32593C-0.0385742 4.61646 0.00390625 6.41553 0.111816 7.3103C0.416504 9.88696 1.07764 12.1592 2.19336 14.4548C3.31396 16.7646 4.62207 18.5918 6.45996 20.4329C8.30273 22.2695 10.1313 23.5764 12.4429 24.6963C14.7402 25.8113 17.0142 26.4719 19.5928 26.7764C20.4883 26.884 22.2886 26.9263 22.5796 26.8467C23.0293 26.7295 23.4561 26.4109 23.7139 26.0081C24 25.5676 24 25.5723 24 22.7661C24 20.5032 23.9907 20.1846 23.9204 19.9785C23.77 19.5334 23.5122 19.2007 23.1328 18.9524C22.7573 18.7136 22.5088 18.6526 21.7778 18.6199C20.4932 18.573 19.4429 18.4043 18.2798 18.0718C17.4878 17.8467 16.9907 17.814 16.5498 17.9592C16.2266 18.0669 16.2402 18.0576 14.5854 19.3132L13.1836 20.3721L12.6021 20.0347C10.0044 18.5308 8.354 16.8816 6.8584 14.2957L6.521 13.7146L7.58057 12.3091C8.1665 11.5361 8.69189 10.8381 8.75293 10.7583C8.91211 10.543 9.04346 10.0649 9.04346 9.69971C9.04346 9.47461 8.9917 9.19824 8.85107 8.71118C8.49951 7.46484 8.36816 6.64502 8.29346 5.27222C8.25098 4.44312 8.20898 4.22754 8.03516 3.89014C7.92285 3.66992 7.55713 3.29517 7.32715 3.15942C6.90088 2.91113 6.87744 2.90625 4.09717 2.91113C1.79004 2.91113 1.49463 2.92041 1.28369 2.99072Z" fill="#1D2023" fill-opacity="1.000000" fill-rule="evenodd"/>
+        <circle id="Ellipse 52" cx="20.000000" cy="4.000000" r="4.000000" fill="#20C633" fill-opacity="1.000000"/>
+      </svg>
+      
+    </button>
+  </nav>
+
+
   <div class="swiper sample-slider">
     <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="assets/img/slider.png"></div>
@@ -129,6 +152,22 @@
         <div class="swiper-slide"><img src="assets/img/slider.png"></div>
     </div>
     <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <div class="swiper mobileSlider d-none mx-2">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="mobileSlider-text">Баннер/Слайдер</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="mobileSlider-text">Баннер/Слайдер</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="mobileSlider-text">Баннер/Слайдер</div>
+      </div>
+    </div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
   </div>
