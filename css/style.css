@@ -645,9 +645,16 @@ label {
   margin-bottom: 120px;
 }
 
+.location-title-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .location-card {
   padding: 10px 10px 10px 30px;
   background: var(--lite-blue, #EFF9FF);
+  border-radius: 10px;
 }
 
 .location-title {
@@ -1053,7 +1060,36 @@ label {
   .date-title {
     text-align: center;
   }
+  
+  .location {
+    margin-top: 80px;
+  }
 
+  .location-title-row {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+  }
 
+  .option-row {
+    display: none !important;
+  }
+
+  .option-row-mobile {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px;
+  }
+
+  .option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .location-subtitle {
+    width: 80%;
+    margin-bottom: 20px;
+  }
 
 }

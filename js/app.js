@@ -49,11 +49,6 @@ const ourTeamSwiper = new Swiper('.ourteam-swiper', {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-    }
-  }
 });
 
 const ourTeamMobileSwiper = new Swiper('.ourteammobile-swiper', {
