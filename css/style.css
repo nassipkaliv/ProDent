@@ -321,7 +321,7 @@ body {
   margin-top: 100px;
 }
 
-.contacts .row {
+.contacts .row.two {
   gap: 45px;
 }
 
@@ -398,6 +398,15 @@ label {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  width: 70%;
+}
+
+.first-col {
+  z-index: 2;
+}
+
+.second-col {
+  z-index: 0;
 }
 
 .contact-card.right {
@@ -431,8 +440,8 @@ label {
 
 .doc-img {
   position: absolute;
-  top: -300px;
-  right: -450px;
+  top: -60px;
+  right: -125px;
 }
 
 .reasons {
@@ -927,6 +936,39 @@ label {
     width: 80%;
   }
 
+  .contact-card {
+    width: 100%;
+  }
+
+  .form-row .col {
+    width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .doc-img {
+    position: absolute;
+    top: -270px;
+    right: -105px;
+    z-index: 0;
+    width: 429px;
+    height: 380px;
+  }
+
+  .doc-title {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .doc-btn {
+    margin-top: 48px;
+    width: 100%;
+  }
+
+  .row.two {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
 
 
 }
