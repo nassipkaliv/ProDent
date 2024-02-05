@@ -83,13 +83,18 @@ body {
   background: #EF2434;
   align-items: center;
   justify-content: center;
-  color: var(--white, #FFF);
+  color: var(--white, #FFF) !important;
   text-align: center;
   font-family: 'Winston', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  transition: background-color 0.3s ease;
+}
+
+.menu-btn:hover {
+  background-color: #490909;
 }
 
 .sample-slider{
@@ -140,6 +145,12 @@ body {
   display: flex;
   justify-content: space-between;
   position: relative;
+  transition: all 0.3s ease;
+}
+
+.cst-btn:hover {
+  color: #fff;
+  background: #4797FF;
 }
 
 .cst-btn-svg {
@@ -304,7 +315,7 @@ body {
   border-radius: 24px;
   border: 1px solid var(--blue, #4797FF);
   background: var(--blue, #4797FF);
-  color: var(--white, #FFF);
+  color: var(--white, #FFF) !important;
   font-family: 'Winston', sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -315,6 +326,11 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
+  transition: all 0.3s ease;
+}
+
+.card-btn:hover {
+  background-color: #0b6be9;
 }
 
 .contacts {
@@ -351,6 +367,7 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 120%; /* 45.6px */
+  margin-bottom: 40px;
 }
 
 .form-control {
@@ -362,6 +379,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  padding: 15px;
 }
 
 .form-control::placeholder {
@@ -374,7 +392,8 @@ label {
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 30px;
+  margin-bottom: 5px;
 }
 
 .submit-btn {
@@ -388,6 +407,11 @@ label {
   line-height: 120%; /* 21.6px */
   text-align: center;
   padding: 16px;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #ba9203;
 }
 
 .sogl {
@@ -429,13 +453,18 @@ label {
   align-items: center;
   justify-content: center;
   padding: 16px 100px;
-  color: var(--white, #FFF);
+  color: var(--white, #FFF) !important;
   font-family: 'Winston', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 120%; /* 21.6px */
   margin-top: 56px;
+  transition: background-color 0.3s ease;
+}
+
+.doc-btn:hover {
+  background-color: #490909;
 }
 
 .doc-img {
@@ -624,6 +653,12 @@ label {
   line-height: 120%;
   letter-spacing: 0%;
   padding: 9px 39px;
+  transition: all 0.3s ease; 
+}
+
+.sales-btn-more:hover {
+  color: #fff;
+  background-color: #EF2434;
 }
 
 .sales-btn-buy {
@@ -631,13 +666,19 @@ label {
   border: 1px solid rgb(245, 37, 54);
   border-radius: 14px;
   background: rgb(239, 36, 52);
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255) !important;
   font-family: 'Winston', sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 120%;
   letter-spacing: 0%;
   padding: 9px 39px;
+  transition: all 0.3s ease; 
+}
+
+.sales-btn-buy:hover {
+  background-color: #490909;
+  border: 1px solid #490909;
 }
 
 .location {
@@ -767,7 +808,7 @@ label {
   font-size: 20px;
   font-weight: 400;
   line-height: 25px;
-  transition: all 0.3s ease; /* Add a smooth transition for a smoother hover effect */
+  transition: all 0.3s ease; 
 }
 
 .footer-small-link:hover {
@@ -1112,4 +1153,34 @@ label {
     font-size: 14px;
   }
 
+  .contact-card.left {
+    padding: 20px;
+  }
+
+  .contact-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  label {
+    font-size: 18px;
+    margin-bottom: 7px;
+    line-height: 22px;
+  }
+
+  .contact-card.left, .contact-card.right {
+    border-radius: 10px !important;
+  }
+
+  .contact-card.left {
+    background: url("../assets/img/contact1mob.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .contact-card.right {
+    background: url("../assets/img/contact2mob.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
