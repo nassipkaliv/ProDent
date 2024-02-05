@@ -64,10 +64,12 @@ body {
 .menu-left {
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 25px;
+  margin-right: 10px;
 }
 
 .menu-item {
+  text-decoration: none;
   color: #B3B3B3;
   font-family: 'Winston', sans-serif;
   font-size: 17px;
@@ -75,7 +77,42 @@ body {
   font-weight: 500;
   line-height: normal;
   gap: 5px;
+  transition: all 0.3s ease;
 }
+
+.menu-item svg {
+  transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+  color: var(--blue);
+}
+
+.menu-item.active {
+  color: var(--blue);
+}
+
+.menu-item:hover svg path {
+  fill: var(--blue);
+}
+
+.menu-item {
+  cursor: pointer;
+}
+
+.input-container {
+  display: none;
+  
+}
+
+.white-input {
+  width: 180px;
+  padding: 13px;
+  border-radius: 24px;
+  margin-right: 5px;
+  font-family: 'Winston', sans-serif;
+}
+
 
 .menu-btn {
   padding: 15px 22px;
