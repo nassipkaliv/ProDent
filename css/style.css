@@ -658,6 +658,22 @@ label {
   text-align: left;
 }
 
+.sep {
+  margin: 0 5px;
+}
+
+@keyframes timerAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .sep-1 {
   display: none !important;
   visibility: none !important;

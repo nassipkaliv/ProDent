@@ -134,3 +134,241 @@ document.getElementById('svgTrigger').addEventListener('click', function() {
   // Update the HTML content with the new SVG
   svgElement.outerHTML = newSvg;
 });
+
+
+function startCountdown() {
+  var daysElement = document.getElementById('days');
+  var hoursElement = document.getElementById('hours');
+  var minutesElement = document.getElementById('minutes');
+  var secondsElement = document.getElementById('seconds');
+
+  var totalSeconds = 12 * 24 * 3600 + 20 * 3600 + 18 * 60 + 36; // Initial time in seconds
+
+  function updateCountdown() {
+    var days = Math.floor(totalSeconds / (24 * 3600));
+    var hours = Math.floor((totalSeconds % (24 * 3600)) / 3600);
+    var minutes = Math.floor((totalSeconds % 3600) / 60);
+    var seconds = totalSeconds % 60;
+
+    daysElement.textContent = padZero(days);
+    hoursElement.textContent = padZero(hours);
+    minutesElement.textContent = padZero(minutes);
+    secondsElement.textContent = padZero(seconds);
+  }
+
+  function padZero(number) {
+    return number < 10 ? '0' + number : number;
+  }
+
+  // Start the countdown
+  var countdownInterval = setInterval(function () {
+    totalSeconds--;
+
+    if (totalSeconds < 0) {
+      clearInterval(countdownInterval);
+    } else {
+      updateCountdown();
+    }
+  }, 1000);
+}
+
+// Call the function to start the countdown
+startCountdown();
+
+
+function startCountdown1mob() {
+  var daysElement = document.getElementById('days1mob');
+  var hoursElement = document.getElementById('hours1mob');
+  var minutesElement = document.getElementById('minutes1mob');
+  var secondsElement = document.getElementById('seconds1mob');
+
+  var totalSeconds = 12 * 24 * 3600 + 20 * 3600 + 18 * 60 + 36; // Initial time in seconds
+
+  function updateCountdown() {
+    var days = Math.floor(totalSeconds / (24 * 3600));
+    var hours = Math.floor((totalSeconds % (24 * 3600)) / 3600);
+    var minutes = Math.floor((totalSeconds % 3600) / 60);
+    var seconds = totalSeconds % 60;
+
+    daysElement.textContent = padZero(days);
+    hoursElement.textContent = padZero(hours);
+    minutesElement.textContent = padZero(minutes);
+    secondsElement.textContent = padZero(seconds);
+  }
+
+  function padZero(number) {
+    return number < 10 ? '0' + number : number;
+  }
+
+  // Start the countdown
+  var countdownInterval = setInterval(function () {
+    totalSeconds--;
+
+    if (totalSeconds < 0) {
+      clearInterval(countdownInterval);
+    } else {
+      updateCountdown();
+    }
+  }, 1000);
+}
+
+// Call the function to start the countdown
+startCountdown1mob();
+
+
+function startCountdown2() {
+  var daysElement = document.getElementById('days2');
+  var hoursElement = document.getElementById('hours2');
+  var minutesElement = document.getElementById('minutes2');
+  var secondsElement = document.getElementById('seconds2');
+
+  var totalSeconds = 24 * 24 * 3600 + 11 * 3600 + 14 * 60 + 14; // Initial time in seconds
+
+  function updateCountdown() {
+    var days = Math.floor(totalSeconds / (24 * 3600));
+    var hours = Math.floor((totalSeconds % (24 * 3600)) / 3600);
+    var minutes = Math.floor((totalSeconds % 3600) / 60);
+    var seconds = totalSeconds % 60;
+
+    daysElement.textContent = padZero(days);
+    hoursElement.textContent = padZero(hours);
+    minutesElement.textContent = padZero(minutes);
+    secondsElement.textContent = padZero(seconds);
+  }
+
+  function padZero(number) {
+    return number < 10 ? '0' + number : number;
+  }
+
+  // Start the countdown
+  var countdownInterval = setInterval(function () {
+    totalSeconds--;
+
+    if (totalSeconds < 0) {
+      clearInterval(countdownInterval);
+    } else {
+      updateCountdown();
+    }
+  }, 1000);
+}
+
+// Call the function to start the countdown
+startCountdown2();
+
+function startCountdown2mob() {
+  var daysElement = document.getElementById('days2mob');
+  var hoursElement = document.getElementById('hours2mob');
+  var minutesElement = document.getElementById('minutes2mob');
+  var secondsElement = document.getElementById('seconds2mob');
+
+  var totalSeconds = 24 * 24 * 3600 + 11 * 3600 + 14 * 60 + 14; // Initial time in seconds
+
+  function updateCountdown() {
+    var days = Math.floor(totalSeconds / (24 * 3600));
+    var hours = Math.floor((totalSeconds % (24 * 3600)) / 3600);
+    var minutes = Math.floor((totalSeconds % 3600) / 60);
+    var seconds = totalSeconds % 60;
+
+    daysElement.textContent = padZero(days);
+    hoursElement.textContent = padZero(hours);
+    minutesElement.textContent = padZero(minutes);
+    secondsElement.textContent = padZero(seconds);
+  }
+
+  function padZero(number) {
+    return number < 10 ? '0' + number : number;
+  }
+
+  // Start the countdown
+  var countdownInterval = setInterval(function () {
+    totalSeconds--;
+
+    if (totalSeconds < 0) {
+      clearInterval(countdownInterval);
+    } else {
+      updateCountdown();
+    }
+  }, 1000);
+}
+
+// Call the function to start the countdown
+startCountdown2mob();
+
+function startCountdown3() {
+  var daysElement = document.getElementById('days3');
+  var hoursElement = document.getElementById('hours3');
+  var minutesElement = document.getElementById('minutes3');
+  var secondsElement = document.getElementById('seconds3');
+
+  var totalSeconds = 15 * 24 * 3600 + 18 * 3600 + 40 * 60 + 40; // Initial time in seconds
+
+  function updateCountdown() {
+    var days = Math.floor(totalSeconds / (24 * 3600));
+    var hours = Math.floor((totalSeconds % (24 * 3600)) / 3600);
+    var minutes = Math.floor((totalSeconds % 3600) / 60);
+    var seconds = totalSeconds % 60;
+
+    daysElement.textContent = padZero(days);
+    hoursElement.textContent = padZero(hours);
+    minutesElement.textContent = padZero(minutes);
+    secondsElement.textContent = padZero(seconds);
+  }
+
+  function padZero(number) {
+    return number < 10 ? '0' + number : number;
+  }
+
+  // Start the countdown
+  var countdownInterval = setInterval(function () {
+    totalSeconds--;
+
+    if (totalSeconds < 0) {
+      clearInterval(countdownInterval);
+    } else {
+      updateCountdown();
+    }
+  }, 1000);
+}
+
+// Call the function to start the countdown
+startCountdown3();
+
+
+function startCountdown3mob() {
+  var daysElement = document.getElementById('days3mob');
+  var hoursElement = document.getElementById('hours3mob');
+  var minutesElement = document.getElementById('minutes3mob');
+  var secondsElement = document.getElementById('seconds3mob');
+
+  var totalSeconds = 15 * 24 * 3600 + 18 * 3600 + 40 * 60 + 40; // Initial time in seconds
+
+  function updateCountdown() {
+    var days = Math.floor(totalSeconds / (24 * 3600));
+    var hours = Math.floor((totalSeconds % (24 * 3600)) / 3600);
+    var minutes = Math.floor((totalSeconds % 3600) / 60);
+    var seconds = totalSeconds % 60;
+
+    daysElement.textContent = padZero(days);
+    hoursElement.textContent = padZero(hours);
+    minutesElement.textContent = padZero(minutes);
+    secondsElement.textContent = padZero(seconds);
+  }
+
+  function padZero(number) {
+    return number < 10 ? '0' + number : number;
+  }
+
+  // Start the countdown
+  var countdownInterval = setInterval(function () {
+    totalSeconds--;
+
+    if (totalSeconds < 0) {
+      clearInterval(countdownInterval);
+    } else {
+      updateCountdown();
+    }
+  }, 1000);
+}
+
+// Call the function to start the countdown
+startCountdown3mob();
