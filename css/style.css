@@ -231,6 +231,9 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  z-index: 3;
+  position: relative;
+  margin-bottom: -50px;
 }
 
 .about {
@@ -1235,5 +1238,10 @@ label {
     background: url("../assets/img/contact2mob.png");
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  .menu-item {
+    color: #000 !important;
+    font-size: 24px;
   }
 }
