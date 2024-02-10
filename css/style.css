@@ -131,7 +131,7 @@ body {
 }
 
 .menu-btn:hover {
-  background-color: #7f1515;
+  background: #b5000f;
 }
 
 .sample-slider{
@@ -585,7 +585,7 @@ label {
 }
 
 .doc-btn:hover {
-  background-color: #7f1515;
+  background-color: #b5000f;
 }
 
 .doc-img {
@@ -814,8 +814,8 @@ label {
 }
 
 .sales-btn-buy:hover {
-  background-color: #7f1515;
-  border: 1px solid #7f1515;
+  background-color: #b5000f;
+  border: 1px solid #b5000f;
 }
 
 .location {
