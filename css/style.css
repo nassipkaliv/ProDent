@@ -169,7 +169,7 @@ body {
 }
 
 .banner {
-  background-color: #65879a;
+  background-color: #97a6bb;
   height: 540px;
   border-radius: 34px;
   padding: 40px 80px;
@@ -317,6 +317,7 @@ body {
 
 .about {
   margin-top: 150px;
+  background: rgb(248, 248, 248);
 }
 
 .about .title {
@@ -582,6 +583,8 @@ label {
   line-height: 120%; /* 21.6px */
   margin-top: 56px;
   transition: background-color 0.3s ease;
+  box-shadow: none !important;
+  border: none !important;
 }
 
 .doc-btn:hover {
@@ -666,6 +669,7 @@ label {
 
 .sales {
   margin-top: 150px;
+  background: rgb(248, 248, 248);
 }
 
 .sales .title {
@@ -999,10 +1003,18 @@ label {
   .mobileSlider .swiper-slide {
     border-radius: 10px;
     background: rgb(217, 217, 217);
-    height: 290px;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 320px;
+    background: url("../assets/img/bannerbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: 'Winston', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
   }
 
   .mobileSlider-text {
@@ -1051,13 +1063,14 @@ label {
   .ourservice {
     padding-left: 10px !important;
     padding-right: 10px !important;
+    margin-top: 60px;
   }
 
   .ourservice .title-h1 {
     font-size: 28px;
     font-weight: 500;
     line-height: 35px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   .ourservice-swiper {
@@ -1074,6 +1087,7 @@ label {
 
   .about.mobile {
     display: flex !important;
+    background: rgb(248, 248, 248);
   }
   
   .about {
@@ -1162,6 +1176,8 @@ label {
   .reasons {
     margin-left: 10px !important;
     margin-right: 10px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
 
   .reasons-title {
@@ -1185,7 +1201,7 @@ label {
   }
 
   .reason-description {
-    font-size: 18px;
+    font-size: 17px;
     width: 85%;
   }
 
@@ -1206,6 +1222,7 @@ label {
 
   .sales {
     margin-top: 80px;
+    
   }
 
   .sales .title {
