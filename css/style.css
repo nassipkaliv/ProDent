@@ -1252,6 +1252,19 @@ label {
     margin-bottom: 20px;
   }
 
+  .ourteammobile-swiper .swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset, -10px);
+    right: auto;
+    z-index: 3;
+  }
+
+  .ourteammobile-swiper .swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset, -10px);
+    left: auto;
+    z-index: 3;
+  }
+
+
   .sales-swiper .swiper-button-prev, .swiper-rtl .swiper-button-next {
     left: var(--swiper-navigation-sides-offset, -10px);
     right: auto;
