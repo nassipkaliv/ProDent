@@ -675,8 +675,12 @@ label {
 }
 
 .sales {
-  margin-top: 150px;
+  margin-top: 120px;
   background: rgb(248, 248, 248);
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .sales .title {
@@ -1236,6 +1240,8 @@ label {
     margin-bottom: 20px;
     padding-left: 5px !important;
     padding-right: 5px !important;
+    padding-bottom: 30px;
+    padding-top: 30px;
     
   }
 
@@ -1266,13 +1272,13 @@ label {
 
 
   .sales-swiper .swiper-button-prev, .swiper-rtl .swiper-button-next {
-    left: var(--swiper-navigation-sides-offset, -10px);
+    left: var(--swiper-navigation-sides-offset, 0px);
     right: auto;
     z-index: 3;
   }
 
   .sales-swiper .swiper-button-next, .swiper-rtl .swiper-button-prev {
-    right: var(--swiper-navigation-sides-offset, -10px);
+    right: var(--swiper-navigation-sides-offset, 0px);
     left: auto;
     z-index: 3;
   }
