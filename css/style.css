@@ -168,6 +168,8 @@ body {
   margin-top: 60px;
 }
 
+
+
 .download-left {
   padding-left: 30px;
 }
@@ -1019,6 +1021,15 @@ label {
   line-height: 20px;
 }
 
+.footer-info a {
+  color: var(--black);
+  transition: all 0.3s ease;
+}
+
+.footer-info a:hover {
+  color: #0b6be9;
+}
+
 .service-card.first {
   background: url("../assets/img/service1.png");
   background-size: 100% 100%;
@@ -1131,7 +1142,7 @@ label {
 
   .cst-btn-svg {
     position: absolute;
-    right: 0;
+    right: -1px;
   }
 
   .cst-btn-text {
@@ -1488,5 +1499,40 @@ label {
 
   .hide {
     visibility: hidden;
+  }
+
+  .download-app {
+    display: none !important;
+  }
+
+  .download-app.mob {
+    display: flex !important;
+    padding: 0 !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .download {
+    padding-bottom: 0;
+  }
+
+  .download-app.mob .cst-btn {
+    margin-top: -30px;
+  }
+
+  .download-app.mob .cst-btn-text {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+
+  .download-left {
+    padding-left: 10px !important;
+  }
+
+  .download-img {
+    width: 280px;
+    height: 190px;
+    top: 25px;
+    bottom: 0;
   }
 }
