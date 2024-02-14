@@ -96,6 +96,10 @@ body {
   fill: var(--blue);
 }
 
+.menu-item svg .donotfill svg path {
+  fill: none !important;
+}
+
 .menu-item {
   cursor: pointer;
 }
