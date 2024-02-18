@@ -436,10 +436,13 @@ body {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
+.team-card .card-btn {
+  margin-bottom: auto;
+}
+
 .card-img-top {
   border-top-left-radius: 34px;
   border-top-right-radius: 34px;
-  
 }
 
 .card-title {
@@ -501,6 +504,10 @@ body {
 
 .contacts {
   margin-top: 100px;
+}
+
+.contacts.doctors {
+  margin-bottom: 75px;
 }
 
 .contacts .row.two {
@@ -690,6 +697,8 @@ label {
 .reason-img {
   top: 20px !important;
   right: 20px !important;
+  width: 120px;
+  height: 120px;
 }
 
 .video {
@@ -1060,6 +1069,43 @@ label {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 250px;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  float: left;
+  padding-right: 0.5rem;
+  color: #6c757d;
+  content: var(--bs-breadcrumb-divider, '\\');
+}
+
+.breadcrumb-item {
+  text-decoration: none;
+  color: rgb(29, 32, 35);
+  font-family: 'Averta Demo PE Regular';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  color: rgb(29, 32, 35)
+}
+
+.breadcrumb-item.active {
+  color: rgb(172, 169, 169);
+}
+
+.team.doctors {
+  margin-top: 35px;
+}
+
+.team.doctors .title-h1 {
+  margin-bottom: 50px;
+}
+
+.team-row {
+  gap: 20px;
 }
 
 @media only screen and (max-width: 768px) {
