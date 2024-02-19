@@ -1179,6 +1179,21 @@ label {
   padding: 9px;
 }
 
+.download-banner {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.download-btn-store {
+  width: 295px;
+  height: 96px;
+  cursor: pointer;
+}
+
+.download-banner-container {
+  margin-bottom: 120px;
+}
+
 @media only screen and (max-width: 768px) {
   .navbar-mobile {
     display: flex !important; 
@@ -1723,5 +1738,27 @@ label {
 
   .contacts.oursales {
     margin-top: 60px;
+  }
+
+  .download-row {
+    flex-direction: column;
+  }
+
+  .download-btn-store {
+    width: 100%;
+    height: 104px;
+  }
+
+  .download-banner {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .breadcrumb {
+    margin-top: 20px;
+  }
+
+  .download-banner-container {
+    margin-bottom: 60px;
   }
 }
