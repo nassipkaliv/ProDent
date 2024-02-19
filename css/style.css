@@ -1680,4 +1680,48 @@ label {
   .contacts.doctors {
     display: none;
   }
+
+  .team.oursales {
+    margin-top: 30px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .team.oursales .title-h1 {
+    text-align: left !important;
+    margin-bottom: 30px;
+  }
+
+  .sales-container {
+    padding: 15px;
+    border-radius: 20px;
+    --bs-gutter-x: 0rem !important;
+  }
+
+  .sales-title {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 120%;
+    margin-bottom: 16px;
+  }
+
+  .sales-description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  .otchet-row {
+    flex-direction: column !important;
+    gap: 30px !important;
+    margin-bottom: 30px;
+  }
+
+  .sales-block-btn {
+    margin-bottom: 30px !important;
+  }
+
+  .contacts.oursales {
+    margin-top: 60px;
+  }
 }
