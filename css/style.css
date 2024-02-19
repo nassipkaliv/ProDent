@@ -1253,6 +1253,33 @@ label {
   line-height: 140%;
 }
 
+.roadmap {
+  margin-top: 120px;
+}
+
+.roadmap-row {
+  margin-top: 18px;
+  gap: 20px;
+}
+
+.roadmap-year {
+  color: rgb(29, 32, 35);
+  font-family: 'Winston', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 14px;
+}
+
+.roadmap-info {
+  color: rgb(29, 32, 35);
+  font-family: 'Averta Demo PE Regular';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+
 @media only screen and (max-width: 768px) {
   .navbar-mobile {
     display: flex !important; 
