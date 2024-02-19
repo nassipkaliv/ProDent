@@ -1656,4 +1656,28 @@ label {
     top: 25px;
     bottom: 0;
   }
+
+  .team-row {
+    flex-direction: column !important;
+  }
+
+  .team.doctors {
+    margin-top: 25px;
+  }
+
+  .team.doctors .title-h1 {
+    text-align: left !important;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom: 40px;
+  }
+
+  .reasons.doctors {
+    display: none ;
+  }
+
+  .contacts.doctors {
+    display: none;
+  }
 }
