@@ -25,6 +25,17 @@ const ourServiceSwiper = new Swiper('.ourservice-swiper', {
   },
 });
 
+
+const diplomSwiper = new Swiper('.diplomSwiper', {
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 const ourServiceMobileSwiper = new Swiper('.ourservicemobile-swiper', {
   loop: true,
   slidesPerView: 2,
