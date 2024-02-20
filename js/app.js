@@ -36,6 +36,15 @@ const diplomSwiper = new Swiper('.diplomSwiper', {
   },
 });
 
+const diplomMobSwiper = new Swiper('.diplomMobSwiper', {
+  loop: true,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 const ourServiceMobileSwiper = new Swiper('.ourservicemobile-swiper', {
   loop: true,
   slidesPerView: 2,
