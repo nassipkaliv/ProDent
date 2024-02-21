@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Winston';
+    src: url('Winston-Black.woff2') format('woff2'),
+        url('Winston-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Winston';
+    src: url('Winston-Bold.woff2') format('woff2'),
+        url('Winston-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Winston';
+    src: url('Winston-BlackItalic.woff2') format('woff2'),
+        url('Winston-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Winston';
+    src: url('Winston-BoldItalic.woff2') format('woff2'),
+        url('Winston-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Winston';
+    src: url('Winston-ExtraBold.woff2') format('woff2'),
+        url('Winston-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Winston';
+    src: url('Winston-ExtraBoldItalic.woff2') format('woff2'),
+        url('Winston-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Winston';
+    src: url('Winston-ExtraLight.woff2') format('woff2'),
+        url('Winston-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Winston';
+    src: url('Winston-ExtraLightItalic.woff2') format('woff2'),
+        url('Winston-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Winston';
+    src: url('Winston-Italic.woff2') format('woff2'),
+        url('Winston-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Winston';
+    src: url('Winston-Light.woff2') format('woff2'),
+        url('Winston-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Winston';
+    src: url('Winston-LightItalic.woff2') format('woff2'),
+        url('Winston-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Winston';
+    src: url('Winston-Medium.woff2') format('woff2'),
+        url('Winston-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Winston';
+    src: url('Winston-MediumItalic.woff2') format('woff2'),
+        url('Winston-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Winston';
+    src: url('Winston-Regular.woff2') format('woff2'),
+        url('Winston-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Winston';
+    src: url('Winston-SemiBold.woff2') format('woff2'),
+        url('Winston-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Winston';
+    src: url('Winston-SemiBoldItalic.woff2') format('woff2'),
+        url('Winston-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
