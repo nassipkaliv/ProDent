@@ -569,6 +569,10 @@ body {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
+.card-doctor {
+  height: 365px !important;
+}
+
 .team-card .card-btn {
   margin-bottom: auto;
 }
@@ -598,6 +602,10 @@ body {
 
 .card-info span {
   visibility: hidden;
+}
+
+.hidden {
+  visibility: hidden !important;
 }
 
 .card-stazh {
