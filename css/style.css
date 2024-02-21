@@ -1342,7 +1342,7 @@ label {
 }
 
 .aboutdoctor-text-row {
-  gap: 55px;
+  gap: 35px;
   margin-bottom: 40px;
 }
 
@@ -2253,6 +2253,10 @@ label {
     background-repeat: no-repeat;
     width: 60px;
     height: 60px;
+  }
+
+  .aboutdoctor-info {
+    padding-left: 0px;
   }
 
 }
