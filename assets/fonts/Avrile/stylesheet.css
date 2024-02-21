@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Avrile Serif';
+    src: url('AvrileSerif-Bold.woff2') format('woff2'),
+        url('AvrileSerif-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avrile Serif';
+    src: url('AvrileSerif-ExtraBold.woff2') format('woff2'),
+        url('AvrileSerif-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avrile Serif';
+    src: url('AvrileSerif-Medium.woff2') format('woff2'),
+        url('AvrileSerif-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avrile Serif';
+    src: url('AvrileSerif-Regular.woff2') format('woff2'),
+        url('AvrileSerif-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avrile Serif';
+    src: url('AvrileSerif-SemiBold.woff2') format('woff2'),
+        url('AvrileSerif-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+

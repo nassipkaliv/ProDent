@@ -1,0 +1,18 @@
+@font-face {
+    font-family: '';
+    src: url('AvertaDemoPE-ExtraBold.woff2') format('woff2'),
+        url('AvertaDemoPE-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Averta Demo PE Cutted Demo';
+    src: url('AvertaDemoPECuttedDemo-Regular.woff2') format('woff2'),
+        url('AvertaDemoPECuttedDemo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
