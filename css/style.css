@@ -563,12 +563,13 @@ body {
   margin-bottom: 5px;
   border-radius: 34px;
   background: var(--white, #FFF);
-  height: 400px;
+  height: 390px;
 
   /* ds */
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 10px;
 }
+
 
 .card-doctor {
   height: 365px !important;
@@ -591,6 +592,7 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 120%; /* 24px */
+  text-decoration: none;
 }
 
 .card-info {
@@ -1844,6 +1846,7 @@ label {
 
   .team-card {
     height: auto;
+    padding-bottom: 0px;
   }
 
   .date-title {
