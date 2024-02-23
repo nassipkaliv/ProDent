@@ -576,6 +576,7 @@ body {
 
 .team-card .card-btn {
   margin-bottom: auto;
+  margin-top: 14px;
 }
 
 .card-img-top {
@@ -586,7 +587,7 @@ body {
 .card-title {
   color: var(--black, #1D2023);
   font-family: 'Winston', sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 120%; /* 24px */
@@ -595,7 +596,7 @@ body {
 .card-info {
   color: var(--black, #1D2023);
   font-family: "Averta Demo PE Cutted Demo";
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 19.2px */
