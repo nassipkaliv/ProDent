@@ -1502,6 +1502,16 @@ label {
   height: 476px;
 }
 
+.roadmap-bullet {
+  position: relative;
+  bottom: 45px;
+}
+
+.roadmap-bullet-mob {
+  position: relative;
+  right: 24px;
+}
+
 @media only screen and (max-width: 768px) {
   .navbar-mobile {
     display: flex !important; 
@@ -2187,6 +2197,7 @@ label {
 
   .aboutdoctor-roadmap {
     margin-top: 60px;
+    margin-left: 5px;
   }
 
   .roadmap-year {
@@ -2203,11 +2214,13 @@ label {
 
   .roadmap-row {
     margin-top: 0;
-    margin-left: 20px;
+    margin-left: 0px;
   }
 
   .roadmap-row .col-12 {
     margin-bottom: 30px;
+    display: flex;
+    
   }
 
   .diploms {
