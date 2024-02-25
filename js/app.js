@@ -392,3 +392,74 @@ function startCountdown3mob() {
 
 // Call the function to start the countdown
 startCountdown3mob();
+
+
+function toggleSVG1() {
+  var svg = document.getElementById('vacancy-svg1');
+  var minusRect = document.getElementById('minus1');
+  var isOpened = svg.parentElement.getAttribute('aria-expanded') === 'true';
+
+  if (isOpened) {
+    // Remove the 'minus' rect when collapsed
+    minusRect.remove();
+  } else {
+    // Add back the 'minus' rect when expanded
+    var rectTag = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+    rectTag.setAttribute('id', 'minus');
+    rectTag.setAttribute('x', '28');
+    rectTag.setAttribute('y', '14');
+    rectTag.setAttribute('rx', '2');
+    rectTag.setAttribute('width', '4');
+    rectTag.setAttribute('height', '32');
+    rectTag.setAttribute('fill', '#4797FF');
+    rectTag.setAttribute('fill-opacity', '1');
+    svg.appendChild(rectTag);
+  }
+}
+
+function toggleSVG2() {
+  var svg = document.getElementById('vacancy-svg2');
+  var minusRect = document.getElementById('minus2');
+  var isOpened = svg.parentElement.getAttribute('aria-expanded') === 'true';
+
+  if (isOpened) {
+    // Remove the 'minus' rect when collapsed
+    minusRect.remove();
+  } else {
+    // Add back the 'minus' rect when expanded
+    var rectTag = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+    rectTag.setAttribute('id', 'minus');
+    rectTag.setAttribute('x', '28');
+    rectTag.setAttribute('y', '14');
+    rectTag.setAttribute('rx', '2');
+    rectTag.setAttribute('width', '4');
+    rectTag.setAttribute('height', '32');
+    rectTag.setAttribute('fill', '#4797FF');
+    rectTag.setAttribute('fill-opacity', '1');
+    svg.appendChild(rectTag);
+  }
+}
+
+
+function toggleSVG3() {
+  var svg = document.getElementById('vacancy-svg3');
+  var minusRect = document.getElementById('minus3');
+  var isOpened = svg.parentElement.getAttribute('aria-expanded') === 'true';
+
+  if (isOpened) {
+    // Remove the 'minus' rect when collapsed
+    minusRect.remove();
+  } else {
+    // Add back the 'minus' rect when expanded
+    var rectTag = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+    rectTag.setAttribute('id', 'minus');
+    rectTag.setAttribute('x', '28');
+    rectTag.setAttribute('y', '14');
+    rectTag.setAttribute('rx', '2');
+    rectTag.setAttribute('width', '4');
+    rectTag.setAttribute('height', '32');
+    rectTag.setAttribute('fill', '#4797FF');
+    rectTag.setAttribute('fill-opacity', '1');
+    svg.appendChild(rectTag);
+  }
+}
