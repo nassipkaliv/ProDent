@@ -556,7 +556,7 @@ body {
 }
 
 .team .title-h1 {
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 
 .team-card {
@@ -1460,6 +1460,18 @@ label {
 
 .contacts.certificate {
   margin-bottom: 120px;
+}
+
+.contacts.oursales {
+  margin-bottom: 75px;
+}
+
+.team.oursales {
+  margin-top: 50px;
+}
+
+.team.work {
+  margin-top: 25px;
 }
 
 .download-banner-card {
