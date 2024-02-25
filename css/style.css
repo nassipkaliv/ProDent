@@ -1527,6 +1527,73 @@ label {
   right: 24px;
 }
 
+.work-card-title {
+  color: rgb(29, 32, 35);
+  font-family: 'Winston';
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 33px;
+  margin-bottom: 50px;
+  width: 50%;
+}
+
+.work-card-info {
+  margin-left: 20px;
+}
+
+.work-problem {
+  color: rgb(29, 32, 35);
+  font-family: 'Winston';
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.work-p {
+  color: rgb(29, 32, 35);
+  font-family: 'Averta Demo PE Cutted Demo';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.work-solution {
+  margin-top: 40px;
+  border-radius: 14px;
+  background: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+.work-solution-title {
+  color: rgb(71, 151, 255);
+  font-family: 'Winston';
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.work-solution-p {
+  color: rgb(29, 32, 35);
+  font-family: 'Averta Demo PE Cutted Demo';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.work-doctor {
+  margin-top: 20px;
+  margin-left: 20px;
+  color: rgb(29, 32, 35);
+  font-family: 'Winston';
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.work-doctor span {
+  opacity: 0.5;
+}
+
 @media only screen and (max-width: 768px) {
   .navbar-mobile {
     display: flex !important; 
