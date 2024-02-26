@@ -577,6 +577,7 @@ body {
   /* ds */
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 10px;
+  border-width: 0 !important;
 }
 
 
@@ -1321,12 +1322,17 @@ label {
   border-radius: 100px;
   /* blue */
   background: rgb(71, 151, 255);
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255) !important;
   font-family: 'Winston', sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 120%;
   padding: 9px;
+  transition: all 0.3s ease;
+}
+
+.sales-block-btn:hover {
+  background-color: #0b6be9;
 }
 
 .download-banner {
@@ -1472,7 +1478,7 @@ label {
 }
 
 .contacts.oursales {
-  margin-bottom: 75px;
+  margin-bottom: 120px;
 }
 
 .team.oursales {
@@ -2334,7 +2340,15 @@ label {
 
   .download-btn-store {
     width: 100%;
-    height: 95px;
+    height: 104px;
+  }
+
+  .card-doctor.hidden {
+    display: none !important;
+  }
+
+  .contacts.oursales {
+    margin-bottom: 60px;
   }
 
   .aboutdoctor {
