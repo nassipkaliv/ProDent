@@ -156,244 +156,6 @@ document.getElementById('svgTrigger').addEventListener('click', function() {
 });
 
 
-function startCountdown() {
-  var daysElement = document.getElementById('days');
-  var hoursElement = document.getElementById('hours');
-  var minutesElement = document.getElementById('minutes');
-  var secondsElement = document.getElementById('seconds');
-
-  var totalSeconds = 12 * 24 * 3600 + 20 * 3600 + 18 * 60 + 36; // Initial time in seconds
-
-  function updateCountdown() {
-    var days = Math.floor(totalSeconds / (24 * 3600));
-    var hours = Math.floor((totalSeconds % (24 * 3600)) / 3600);
-    var minutes = Math.floor((totalSeconds % 3600) / 60);
-    var seconds = totalSeconds % 60;
-
-    daysElement.textContent = padZero(days);
-    hoursElement.textContent = padZero(hours);
-    minutesElement.textContent = padZero(minutes);
-    secondsElement.textContent = padZero(seconds);
-  }
-
-  function padZero(number) {
-    return number < 10 ? '0' + number : number;
-  }
-
-  // Start the countdown
-  var countdownInterval = setInterval(function () {
-    totalSeconds--;
-
-    if (totalSeconds < 0) {
-      clearInterval(countdownInterval);
-    } else {
-      updateCountdown();
-    }
-  }, 1000);
-}
-
-// Call the function to start the countdown
-startCountdown();
-
-
-function startCountdown1mob() {
-  var daysElement = document.getElementById('days1mob');
-  var hoursElement = document.getElementById('hours1mob');
-  var minutesElement = document.getElementById('minutes1mob');
-  var secondsElement = document.getElementById('seconds1mob');
-
-  var totalSeconds = 12 * 24 * 3600 + 20 * 3600 + 18 * 60 + 36; // Initial time in seconds
-
-  function updateCountdown() {
-    var days = Math.floor(totalSeconds / (24 * 3600));
-    var hours = Math.floor((totalSeconds % (24 * 3600)) / 3600);
-    var minutes = Math.floor((totalSeconds % 3600) / 60);
-    var seconds = totalSeconds % 60;
-
-    daysElement.textContent = padZero(days);
-    hoursElement.textContent = padZero(hours);
-    minutesElement.textContent = padZero(minutes);
-    secondsElement.textContent = padZero(seconds);
-  }
-
-  function padZero(number) {
-    return number < 10 ? '0' + number : number;
-  }
-
-  // Start the countdown
-  var countdownInterval = setInterval(function () {
-    totalSeconds--;
-
-    if (totalSeconds < 0) {
-      clearInterval(countdownInterval);
-    } else {
-      updateCountdown();
-    }
-  }, 1000);
-}
-
-// Call the function to start the countdown
-startCountdown1mob();
-
-
-function startCountdown2() {
-  var daysElement = document.getElementById('days2');
-  var hoursElement = document.getElementById('hours2');
-  var minutesElement = document.getElementById('minutes2');
-  var secondsElement = document.getElementById('seconds2');
-
-  var totalSeconds = 24 * 24 * 3600 + 11 * 3600 + 14 * 60 + 14; // Initial time in seconds
-
-  function updateCountdown() {
-    var days = Math.floor(totalSeconds / (24 * 3600));
-    var hours = Math.floor((totalSeconds % (24 * 3600)) / 3600);
-    var minutes = Math.floor((totalSeconds % 3600) / 60);
-    var seconds = totalSeconds % 60;
-
-    daysElement.textContent = padZero(days);
-    hoursElement.textContent = padZero(hours);
-    minutesElement.textContent = padZero(minutes);
-    secondsElement.textContent = padZero(seconds);
-  }
-
-  function padZero(number) {
-    return number < 10 ? '0' + number : number;
-  }
-
-  // Start the countdown
-  var countdownInterval = setInterval(function () {
-    totalSeconds--;
-
-    if (totalSeconds < 0) {
-      clearInterval(countdownInterval);
-    } else {
-      updateCountdown();
-    }
-  }, 1000);
-}
-
-// Call the function to start the countdown
-startCountdown2();
-
-function startCountdown2mob() {
-  var daysElement = document.getElementById('days2mob');
-  var hoursElement = document.getElementById('hours2mob');
-  var minutesElement = document.getElementById('minutes2mob');
-  var secondsElement = document.getElementById('seconds2mob');
-
-  var totalSeconds = 24 * 24 * 3600 + 11 * 3600 + 14 * 60 + 14; // Initial time in seconds
-
-  function updateCountdown() {
-    var days = Math.floor(totalSeconds / (24 * 3600));
-    var hours = Math.floor((totalSeconds % (24 * 3600)) / 3600);
-    var minutes = Math.floor((totalSeconds % 3600) / 60);
-    var seconds = totalSeconds % 60;
-
-    daysElement.textContent = padZero(days);
-    hoursElement.textContent = padZero(hours);
-    minutesElement.textContent = padZero(minutes);
-    secondsElement.textContent = padZero(seconds);
-  }
-
-  function padZero(number) {
-    return number < 10 ? '0' + number : number;
-  }
-
-  // Start the countdown
-  var countdownInterval = setInterval(function () {
-    totalSeconds--;
-
-    if (totalSeconds < 0) {
-      clearInterval(countdownInterval);
-    } else {
-      updateCountdown();
-    }
-  }, 1000);
-}
-
-// Call the function to start the countdown
-startCountdown2mob();
-
-function startCountdown3() {
-  var daysElement = document.getElementById('days3');
-  var hoursElement = document.getElementById('hours3');
-  var minutesElement = document.getElementById('minutes3');
-  var secondsElement = document.getElementById('seconds3');
-
-  var totalSeconds = 15 * 24 * 3600 + 18 * 3600 + 40 * 60 + 40; // Initial time in seconds
-
-  function updateCountdown() {
-    var days = Math.floor(totalSeconds / (24 * 3600));
-    var hours = Math.floor((totalSeconds % (24 * 3600)) / 3600);
-    var minutes = Math.floor((totalSeconds % 3600) / 60);
-    var seconds = totalSeconds % 60;
-
-    daysElement.textContent = padZero(days);
-    hoursElement.textContent = padZero(hours);
-    minutesElement.textContent = padZero(minutes);
-    secondsElement.textContent = padZero(seconds);
-  }
-
-  function padZero(number) {
-    return number < 10 ? '0' + number : number;
-  }
-
-  // Start the countdown
-  var countdownInterval = setInterval(function () {
-    totalSeconds--;
-
-    if (totalSeconds < 0) {
-      clearInterval(countdownInterval);
-    } else {
-      updateCountdown();
-    }
-  }, 1000);
-}
-
-// Call the function to start the countdown
-startCountdown3();
-
-
-function startCountdown3mob() {
-  var daysElement = document.getElementById('days3mob');
-  var hoursElement = document.getElementById('hours3mob');
-  var minutesElement = document.getElementById('minutes3mob');
-  var secondsElement = document.getElementById('seconds3mob');
-
-  var totalSeconds = 15 * 24 * 3600 + 18 * 3600 + 40 * 60 + 40; // Initial time in seconds
-
-  function updateCountdown() {
-    var days = Math.floor(totalSeconds / (24 * 3600));
-    var hours = Math.floor((totalSeconds % (24 * 3600)) / 3600);
-    var minutes = Math.floor((totalSeconds % 3600) / 60);
-    var seconds = totalSeconds % 60;
-
-    daysElement.textContent = padZero(days);
-    hoursElement.textContent = padZero(hours);
-    minutesElement.textContent = padZero(minutes);
-    secondsElement.textContent = padZero(seconds);
-  }
-
-  function padZero(number) {
-    return number < 10 ? '0' + number : number;
-  }
-
-  // Start the countdown
-  var countdownInterval = setInterval(function () {
-    totalSeconds--;
-
-    if (totalSeconds < 0) {
-      clearInterval(countdownInterval);
-    } else {
-      updateCountdown();
-    }
-  }, 1000);
-}
-
-// Call the function to start the countdown
-startCountdown3mob();
-
-
 function toggleSVG1() {
   var svg = document.getElementById('vacancy-svg1');
   var minusRect = document.getElementById('minus1');
@@ -463,3 +225,245 @@ function toggleSVG3() {
     svg.appendChild(rectTag);
   }
 }
+
+
+function startCountdownTimer() {
+  // Timer 1
+  var daysElement1 = document.getElementById("days1");
+  var hoursElement1 = document.getElementById("hours1");
+  var minutesElement1 = document.getElementById("minutes1");
+  var secondsElement1 = document.getElementById("seconds1");
+
+  if (daysElement1 && hoursElement1 && minutesElement1 && secondsElement1) {
+      var deadline1 = new Date("March 31, 2024 00:00:00").getTime();
+
+      var x1 = setInterval(function () {
+          var now1 = new Date().getTime();
+          var timeRemaining1 = deadline1 - now1;
+          var days1 = Math.floor(timeRemaining1 / (1000 * 60 * 60 * 24));
+          var hours1 = Math.floor((timeRemaining1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes1 = Math.floor((timeRemaining1 % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds1 = Math.floor((timeRemaining1 % (1000 * 60)) / 1000);
+
+          if (daysElement1) {
+              daysElement1.innerHTML = days1;
+          }
+          if (hoursElement1) {
+              hoursElement1.innerHTML = hours1;
+          }
+          if (minutesElement1) {
+              minutesElement1.innerHTML = minutes1;
+          }
+          if (secondsElement1) {
+              secondsElement1.innerHTML = seconds1;
+          }
+
+          if (timeRemaining1 < 0) {
+              clearInterval(x1);
+              if (daysElement1) {
+                  document.getElementById("timer1").innerHTML = "Акция завершена!";
+              }
+          }
+      }, 1000);
+  }
+
+  // Timer 2
+  var daysElement2 = document.getElementById("days2");
+  var hoursElement2 = document.getElementById("hours2");
+  var minutesElement2 = document.getElementById("minutes2");
+  var secondsElement2 = document.getElementById("seconds2");
+
+  if (daysElement2 && hoursElement2 && minutesElement2 && secondsElement2) {
+      var deadline2 = new Date("March 26, 2024 00:00:00").getTime();
+
+      var x2 = setInterval(function () {
+          var now2 = new Date().getTime();
+          var timeRemaining2 = deadline2 - now2;
+          var days2 = Math.floor(timeRemaining2 / (1000 * 60 * 60 * 24));
+          var hours2 = Math.floor((timeRemaining2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes2 = Math.floor((timeRemaining2 % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds2 = Math.floor((timeRemaining2 % (1000 * 60)) / 1000);
+
+          if (daysElement2) {
+              daysElement2.innerHTML = days2;
+          }
+          if (hoursElement2) {
+              hoursElement2.innerHTML = hours2;
+          }
+          if (minutesElement2) {
+              minutesElement2.innerHTML = minutes2;
+          }
+          if (secondsElement2) {
+              secondsElement2.innerHTML = seconds2;
+          }
+
+          if (timeRemaining2 < 0) {
+              clearInterval(x2);
+              if (daysElement2) {
+                  document.getElementById("timer2").innerHTML = "Акция завершена!";
+              }
+          }
+      }, 1000);
+  }
+
+  // Timer 3
+  var daysElement3 = document.getElementById("days3");
+  var hoursElement3 = document.getElementById("hours3");
+  var minutesElement3 = document.getElementById("minutes3");
+  var secondsElement3 = document.getElementById("seconds3");
+
+  if (daysElement3 && hoursElement3 && minutesElement3 && secondsElement3) {
+      var deadline3 = new Date("March 15, 2024 00:00:00").getTime();
+
+      var x3 = setInterval(function () {
+          var now3 = new Date().getTime();
+          var timeRemaining3 = deadline3 - now3;
+          var days3 = Math.floor(timeRemaining3 / (1000 * 60 * 60 * 24));
+          var hours3 = Math.floor((timeRemaining3 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes3 = Math.floor((timeRemaining3 % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds3 = Math.floor((timeRemaining3 % (1000 * 60)) / 1000);
+
+          if (daysElement3) {
+              daysElement3.innerHTML = days3;
+          }
+          if (hoursElement3) {
+              hoursElement3.innerHTML = hours3;
+          }
+          if (minutesElement3) {
+              minutesElement3.innerHTML = minutes3;
+          }
+          if (secondsElement3) {
+              secondsElement3.innerHTML = seconds3;
+          }
+
+          if (timeRemaining3 < 0) {
+              clearInterval(x3);
+              if (daysElement3) {
+                  document.getElementById("timer3").innerHTML = "Акция завершена!";
+              }
+          }
+      }, 1000);
+  }
+
+  // Timer 1 Mobile
+  var daysElement1mob = document.getElementById("days1mob");
+  var hoursElement1mob = document.getElementById("hours1mob");
+  var minutesElement1mob = document.getElementById("minutes1mob");
+  var secondsElement1mob = document.getElementById("seconds1mob");
+
+  if (daysElement1mob && hoursElement1mob && minutesElement1mob && secondsElement1mob) {
+      var deadline1mob = new Date("March 31, 2024 00:00:00").getTime();
+
+      var x1mob = setInterval(function () {
+          var now1mob = new Date().getTime();
+          var timeRemaining1mob = deadline1mob - now1mob;
+          var days1mob = Math.floor(timeRemaining1mob / (1000 * 60 * 60 * 24));
+          var hours1mob = Math.floor((timeRemaining1mob % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes1mob = Math.floor((timeRemaining1mob % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds1mob = Math.floor((timeRemaining1mob % (1000 * 60)) / 1000);
+
+          if (daysElement1mob) {
+              daysElement1mob.innerHTML = days1mob;
+          }
+          if (hoursElement1mob) {
+              hoursElement1mob.innerHTML = hours1mob;
+          }
+          if (minutesElement1mob) {
+              minutesElement1mob.innerHTML = minutes1mob;
+          }
+          if (secondsElement1mob) {
+              secondsElement1mob.innerHTML = seconds1mob;
+          }
+
+          if (timeRemaining1mob < 0) {
+              clearInterval(x1mob);
+              if (daysElement1mob) {
+                  document.getElementById("timer1mob").innerHTML = "Акция завершена!";
+              }
+          }
+      }, 1000);
+  }
+
+  // Timer 2 Mobile
+  var daysElement2mob = document.getElementById("days2mob");
+  var hoursElement2mob = document.getElementById("hours2mob");
+  var minutesElement2mob = document.getElementById("minutes2mob");
+  var secondsElement2mob = document.getElementById("seconds2mob");
+
+  if (daysElement2mob && hoursElement2mob && minutesElement2mob && secondsElement2mob) {
+      var deadline2mob = new Date("March 26, 2024 00:00:00").getTime();
+
+      var x2mob = setInterval(function () {
+          var now2mob = new Date().getTime();
+          var timeRemaining2mob = deadline2mob - now2mob;
+          var days2mob = Math.floor(timeRemaining2mob / (1000 * 60 * 60 * 24));
+          var hours2mob = Math.floor((timeRemaining2mob % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes2mob = Math.floor((timeRemaining2mob % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds2mob = Math.floor((timeRemaining2mob % (1000 * 60)) / 1000);
+
+          if (daysElement2mob) {
+              daysElement2mob.innerHTML = days2mob;
+          }
+          if (hoursElement2mob) {
+              hoursElement2mob.innerHTML = hours2mob;
+          }
+          if (minutesElement2mob) {
+              minutesElement2mob.innerHTML = minutes2mob;
+          }
+          if (secondsElement2mob) {
+              secondsElement2mob.innerHTML = seconds2mob;
+          }
+
+          if (timeRemaining2mob < 0) {
+              clearInterval(x2mob);
+              if (daysElement2mob) {
+                  document.getElementById("timer2mob").innerHTML = "Акция завершена!";
+              }
+          }
+      }, 1000);
+  }
+
+  // Timer 3 Mobile
+  var daysElement3mob = document.getElementById("days3mob");
+  var hoursElement3mob = document.getElementById("hours3mob");
+  var minutesElement3mob = document.getElementById("minutes3mob");
+  var secondsElement3mob = document.getElementById("seconds3mob");
+
+  if (daysElement3mob && hoursElement3mob && minutesElement3mob && secondsElement3mob) {
+      var deadline3mob = new Date("March 15, 2024 00:00:00").getTime();
+
+      var x3mob = setInterval(function () {
+          var now3mob = new Date().getTime();
+          var timeRemaining3mob = deadline3mob - now3mob;
+          var days3mob = Math.floor(timeRemaining3mob / (1000 * 60 * 60 * 24));
+          var hours3mob = Math.floor((timeRemaining3mob % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes3mob = Math.floor((timeRemaining3mob % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds3mob = Math.floor((timeRemaining3mob % (1000 * 60)) / 1000);
+
+          if (daysElement3mob) {
+              daysElement3mob.innerHTML = days3mob;
+          }
+          if (hoursElement3mob) {
+              hoursElement3mob.innerHTML = hours3mob;
+          }
+          if (minutesElement3mob) {
+              minutesElement3mob.innerHTML = minutes3mob;
+          }
+          if (secondsElement3mob) {
+              secondsElement3mob.innerHTML = seconds3mob;
+          }
+
+          if (timeRemaining3mob < 0) {
+              clearInterval(x3mob);
+              if (daysElement3mob) {
+                  document.getElementById("timer3mob").innerHTML = "Акция завершена!";
+              }
+          }
+      }, 1000);
+  }
+}
+
+window.onload = startCountdownTimer;
+
+
+
