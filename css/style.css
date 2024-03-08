@@ -1949,6 +1949,14 @@ label {
   text-align: center;
 }
 
+.lisence {
+  margin-top: 100px;
+}
+
+.lisence .title-h1 {
+  margin-bottom: 40px;
+}
+
 @media only screen and (max-width: 768px) {
   .navbar-mobile {
     display: flex !important; 
