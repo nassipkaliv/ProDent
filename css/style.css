@@ -1838,7 +1838,12 @@ label {
   margin-bottom: 10px;
 }
 
-.swiper-button-prev, .swiper-button-next {
+.gallerySwiper .swiper-button-prev, .swiper-button-next {
+  position: relative;
+  z-index: 99;
+}
+
+.ratesSwiper .swiper-button-prev, .swiper-button-next {
   position: relative;
   z-index: 99;
 }
@@ -1891,6 +1896,57 @@ label {
   display: flex;
   align-items: center;
   position: relative;
+}
+
+.consulting {
+  margin-top: 120px;
+  background: linear-gradient(180.00deg, rgb(250, 250, 250),rgb(244, 244, 244) 100%);
+  padding: 60px 0px;
+}
+
+.consult-row {
+  margin-top: 60px;
+}
+
+.consult-block-row {
+  gap: 60px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.consult-img-row {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.consult-text {
+  color: rgb(29, 32, 35);
+  font-family: 'Avrile Serif';
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 30px;
+}
+
+.consult-footer {
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.consult-footer-text {
+  color: rgb(29, 32, 35);
+  font-family: 'Avrile Serif';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  margin-top: 12px;
+  margin-right: 10px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
