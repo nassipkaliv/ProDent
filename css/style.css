@@ -1777,6 +1777,103 @@ label {
   height: auto;
 }
 
+.rates-p {
+  color: rgb(29, 32, 35);
+  font-family: 'Avrile Serif';
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.rates-block {
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid rgb(231, 231, 231);
+  border-radius: 34px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.star-row {
+  gap: 5px;
+}
+
+.rates-block-p {
+  color: rgb(29, 32, 35);
+  font-family: 'Avrile Serif';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.rates-block-author {
+  color: rgb(29, 32, 35);
+  font-family: 'Winston';
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.rates-block-date {
+  color: rgb(29, 32, 35);
+  font-family: 'Avrile Serif';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.swiper-navigations {
+  margin-top: 60px;
+  display: flex;
+  gap: 90px;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-pagination {
+  margin-bottom: 10px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  position: relative;
+  z-index: 99;
+}
+
+.slide-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.rates-btn {
+  padding: 15px 60px 15px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  /* blue */
+  background: rgb(71, 151, 255);
+  color: rgb(255, 255, 255) !important;
+  font-family: 'Winston';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 140%;
+  transition: all 0.3s ease;
+}
+
+.rates-btn:hover {
+  background-color: #0b6be9;
+}
+
+.rates-footer {
+  margin-top: 60px;
+}
+
 @media only screen and (max-width: 768px) {
   .navbar-mobile {
     display: flex !important; 

@@ -36,6 +36,19 @@ const diplomSwiper = new Swiper('.diplomSwiper', {
   },
 });
 
+const ratesSwiper = new Swiper('.ratesSwiper', {
+  loop: true,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+
+
 const diplomMobSwiper = new Swiper('.diplomMobSwiper', {
   loop: true,
   slidesPerView: 1,
