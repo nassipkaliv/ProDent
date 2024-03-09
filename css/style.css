@@ -2125,6 +2125,135 @@ label {
   margin-right: 14px;
 }
 
+.info {
+  margin-top: 120px;
+}
+
+.infoCard {
+  padding: 30px 40px;
+  border-radius: 34px;
+  /* grg */
+  background: linear-gradient(180.00deg, rgb(250, 250, 250),rgb(244, 244, 244) 100%);
+}
+
+.infoCardTitle {
+  color: rgb(29, 32, 35);
+  font-family: 'Winston';
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 140%;
+  margin-bottom: 20px;
+}
+
+.infoCardText {
+  color: rgb(29, 32, 35);
+  font-family: 'Averta Demo PE Cutted Demo';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.infoCardRoadmap {
+  margin-top: 40px;
+}
+
+.roadmapTitle {
+  color: rgb(29, 32, 35);
+  font-family: 'Winston';
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-top: 20px;
+}
+
+.roadmapText {
+  color: rgb(29, 32, 35);
+  font-family: 'Averta Demo PE Cutted Demo';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.roadmap-line {
+  position: absolute;
+  top: 50px;
+  left: 105px;
+  height: 1px;
+  width: 75%;
+  background: rgb(71, 151, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.roadmap-col {
+  position: relative;
+}
+
+.pokaz {
+  padding: 30px 40px;
+  border-radius: 34px;
+  /* blue */
+  background: rgb(71, 151, 255);
+}
+
+.protivpokaz {
+  padding: 30px 40px;
+  border-radius: 34px;
+  /* blue */
+  background: rgb(254, 71, 86);
+}
+
+.whiteitem {
+  color: #fff !important;
+}
+
+.infoCardList {
+  gap: 70px;
+}
+
+.resultz {
+  padding: 30px 40px;
+  border-radius: 34px;
+  background: rgb(110, 208, 101);
+}
+
+.priem {
+  border-radius: 34px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(255, 255, 255);
+  padding: 30px 40px;
+}
+
+.priem-row label {
+  color: rgb(29, 32, 35);
+  font-family: 'Averta Demo PE Cutted Demo';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.priem-row .form-control {
+  border: 1px solid rgb(158, 158, 158);
+  border-radius: 14px;
+  background: rgb(255, 255, 255);
+}
+
+.priemBtn {
+  border-radius: 14px;
+  background: rgb(71, 151, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-family: 'Winston';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 120%;
+  width: 100%;
+  padding: 16px;
+}
+
 @media only screen and (max-width: 768px) {
   .navbar-mobile {
     display: flex !important; 
