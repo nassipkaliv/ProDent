@@ -1772,6 +1772,10 @@ label {
   margin-right: 40px;
 }
 
+.fixed-container {
+  position: relative;
+}
+
 .fixed-img {
   max-width: 100%;
   height: auto;
@@ -3276,5 +3280,31 @@ label {
   .work-doctor {
     font-size: 20px;
   }
+
+  #policyModal .modal-content {
+    padding: 10px;
+  }
+
+  #policyModal .modal-header, #policyModal .modal-body {
+    padding: 5px;
+  }
+
+  #policyModal .modal-title {
+    font-size: 22px;
+    line-height: normal;
+    margin-top: 15px;
+  }
+
+  #policyModal .modal-p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  #policyModal .modal-header .btn-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
 
 }
