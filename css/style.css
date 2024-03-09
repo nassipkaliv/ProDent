@@ -1135,6 +1135,7 @@ label {
   font-weight: 500;
   line-height: 30px;
   letter-spacing: 0%;
+  text-decoration: none;
 }
 
 .footer-links {
@@ -1151,6 +1152,7 @@ label {
   font-size: 20px;
   font-weight: 400;
   line-height: 25px;
+  text-decoration: none;
 }
 
 .footer-small-link {
