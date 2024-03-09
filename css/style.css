@@ -3620,4 +3620,106 @@ label {
     z-index: 99;
   }
 
+  .consulting {
+    margin-top: 60px;
+    padding: 20px 10px;
+  }
+
+  .con {
+    text-align: center;
+  }
+
+  .consult-row {
+    margin-top: 30px;
+  }
+
+  .consult-block-row {
+    gap: 40px;
+  }
+
+  .consult-block {
+    align-items: center;
+    text-align: center;
+  }
+
+  .consult-text {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  .consult-footer {
+    position: relative;
+    width: 100%;
+  }
+
+  .consultimg2 {
+    display: none;
+  }
+
+  .consult-img-row {
+    margin-top: 40px;
+  }
+
+  .lisence-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .anyquestions {
+    display: none;
+  }
+
+  .anyquestions2 {
+    display: block !important;
+    margin-bottom: 30px;
+    margin-top: 60px;
+  }
+
+  .questions {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .quBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .question-block-title {
+    flex-direction: column;
+  }
+
+  .question-block.bu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .whats {
+    margin-top: 10px;
+  }
+
+  .question-block-p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .question-block-title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+
+  .questions-title {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 35px;
+    margin-bottom: 30px;
+  }
+
 }
