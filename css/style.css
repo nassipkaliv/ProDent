@@ -3461,4 +3461,87 @@ label {
     text-align: center;
   }
 
+  .situations {
+    margin-top: 60px;
+    padding: 20px 10px;
+  }
+
+  .title-h1 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 140%;
+  }
+
+  .situation-row {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .situation-block {
+    border-radius: 10px;
+  }
+
+  .situation-block.first {
+    background: url("../assets/img/situation-blockmob1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .situation-block.second {
+    background: url("../assets/img/situation-blockmob2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .situation-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .faq {
+    margin-top: 60px;
+  }
+
+  .faq .title-h1 {
+    margin-bottom: 30px;
+  }
+
+  .faq-row {
+    flex-direction: column ;
+    align-items: normal !important;
+  }
+
+  .faq-block {
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .faq-block-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+  }
+
+  .faq-collapse-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .team-card.hidden {
+    display: none;
+  }
+
+  .team {
+    margin-top: 70px;
+  }
+
+  .title-h1.ye {
+    text-align: left !important;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 140%;
+  }
+
 }
