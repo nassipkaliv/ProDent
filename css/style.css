@@ -2254,6 +2254,48 @@ label {
   padding: 16px;
 }
 
+.situations {
+  padding: 60px 0px;
+  background: rgb(248, 248, 248);
+  margin-top: 120px;
+}
+
+.situation-block {
+  border-radius: 34px;
+  background: rgb(255, 255, 255); 
+  padding: 20px;
+  position: relative;
+}
+
+.situation-block.first {
+  background: url("../assets/img/situation-block1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.situation-block.second {
+  background: url("../assets/img/situation-block2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.situation-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+
+.situation-text {
+  color: rgb(29, 32, 35);
+  font-family: 'Averta Demo PE Cutted Demo';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-top: 25px;
+  display: flex;
+}
+
 @media only screen and (max-width: 768px) {
   .navbar-mobile {
     display: flex !important; 
