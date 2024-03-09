@@ -3601,6 +3601,23 @@ label {
   .ratesSwiperMob .swiper-button-prev, .ratesSwiperMob .swiper-button-next {
     position: relative;
     z-index: 99;
-}
+  }
+
+  .gallery {
+    margin-top: 60px;
+  }
+
+  .gallerySwiper {
+    display: none;
+  }
+
+  .gallerySwiperMob {
+    display: block !important;
+  }
+
+  .gallerySwiperMob .swiper-button-prev, .gallerySwiperMob .swiper-button-next {
+    position: relative;
+    z-index: 99;
+  }
 
 }
