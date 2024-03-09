@@ -3356,4 +3356,20 @@ label {
     margin-top: 30px;
   }
 
+  ::-webkit-scrollbar {
+    height: 2px;
+    margin-top: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    height: 2px;
+    background: #fff;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgb(217, 217, 217);
+  }
+  
 }
