@@ -26,6 +26,15 @@ const ourServiceSwiper = new Swiper('.ourservice-swiper', {
 });
 
 
+const navSwiper = new Swiper('.navSwiper', {
+  slidesPerView: 1.31,
+  spaceBetween: 20,
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});
+
+
 const diplomSwiper = new Swiper('.diplomSwiper', {
   loop: true,
   slidesPerView: 4,

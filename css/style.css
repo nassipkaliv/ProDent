@@ -3305,6 +3305,55 @@ label {
     position: absolute;
     top: 20px;
     right: 20px;
-}
+  }
+
+  .introCard {
+    display: none;
+  }
+
+  .introCardMob {
+    display: block !important;
+  }
+
+  .introCardMob .title-h1 {
+    color: rgb(29, 32, 35);
+    font-family: 'Winston';
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 140%;
+    margin-top: 20px;
+  }
+
+  .introPrice {
+    border-radius: 10px;
+  }
+
+  .introDesc {
+    color: rgb(29, 32, 35);
+    font-family: 'Averta Demo PE Cutted Demo';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .introNavItem {
+    color: rgb(29, 32, 35);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    display: inline-flex !important;
+    white-space: nowrap;
+  }
+
+  .introNav {
+    min-width: 100%;
+    max-width: 100%;
+    overflow-x: scroll;
+    gap: 25px;
+    margin-left: 15px;
+    margin-top: 30px;
+  }
 
 }
