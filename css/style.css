@@ -1774,9 +1774,13 @@ label {
 
 .fixed-container {
   position: relative;
+  height: 1000px;
 }
 
 .fixed-img {
+  position:-webkit-sticky;
+  position:sticky;
+  top:7vh;
   max-width: 100%;
   height: auto;
 }
