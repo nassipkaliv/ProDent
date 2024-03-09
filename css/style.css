@@ -1838,12 +1838,12 @@ label {
   margin-bottom: 10px;
 }
 
-.gallerySwiper .swiper-button-prev, .swiper-button-next {
+.gallerySwiper .swiper-button-prev, .gallerySwiper .swiper-button-next {
   position: relative;
   z-index: 99;
 }
 
-.ratesSwiper .swiper-button-prev, .swiper-button-next {
+.ratesSwiper .swiper-button-prev, .ratesSwiper .swiper-button-next {
   position: relative;
   z-index: 99;
 }
