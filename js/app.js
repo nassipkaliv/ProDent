@@ -57,6 +57,18 @@ const ratesSwiper = new Swiper('.ratesSwiper', {
   },
 });
 
+const ratesSwiperMob = new Swiper('.ratesSwiperMob', {
+  loop: true,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+
 const gallerySwiper = new Swiper('.gallerySwiper', {
   loop: true,
   slidesPerView: 1,
