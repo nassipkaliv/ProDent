@@ -3877,6 +3877,14 @@ label {
     width: 14px;
     height: 14px;
   }
+
+  .ratesSwiperMob .swiper-navigations {
+    margin-top: -15px;
+  }
+
+  .rates-footer {
+    margin-top: 40px;
+  }
   
 
 }
