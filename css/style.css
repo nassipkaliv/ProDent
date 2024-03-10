@@ -1558,6 +1558,45 @@ label {
   margin-left: 20px;
 }
 
+.work-card-images {
+  gap: 5px;
+}
+
+.work-card-images .col {
+  position: relative;
+  border-radius: 14px 0px 0px 14px;
+}
+
+.left-polygon, .right-polygon {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+
+.left-polygon {
+  right: 5px;
+}
+
+.right-polygon {
+  left: 5px;
+}
+
+.notcorrect {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+}
+
+.correct {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+}
+
 .work-problem {
   color: rgb(29, 32, 35);
   font-family: 'Winston';
@@ -1627,6 +1666,10 @@ label {
   background: linear-gradient(180.00deg, rgb(250, 250, 250),rgb(244, 244, 244) 100%);
   padding: 30px;
   margin-bottom: 50px;
+}
+
+.vacancy-svg {
+  cursor: pointer;
 }
 
 .vacancy-title {
@@ -1856,7 +1899,50 @@ label {
 .ratesSwiper .swiper-button-prev, .ratesSwiper .swiper-button-next {
   position: relative;
   z-index: 99;
+  transition: all 0.3s ease;
 }
+
+.ratesSwiper .swiper-button-next, .gallerySwiper .swiper-button-next {
+  background-image: url('data:image/svg+xml,<svg width="50.000000" height="50.000000" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><desc>Created with Pixso.</desc><defs><linearGradient id="paint_linear_565_414_0" x1="25.000000" y1="0.000000" x2="25.000000" y2="50.000000" gradientUnits="userSpaceOnUse"><stop stop-color="%23FAFAFA"/><stop offset="1.000000" stop-color="%23F4F4F4"/></linearGradient><linearGradient id="paint_linear_565_419_0" x1="31.500000" y1="25.000000" x2="31.500000" y2="28.000000" gradientUnits="userSpaceOnUse"><stop stop-color="%23FAFAFA"/><stop offset="1.000000" stop-color="%23F4F4F4"/></linearGradient></defs><circle id="Ellipse 44" cx="25.000000" cy="25.000000" r="25.000000" fill="url(%23paint_linear_565_414_0)" fill-opacity="1.000000"/><path id="Arrow 4" d="M29.8789 25L22.4531 17.5754C21.8594 16.9814 21.8594 16.048 22.4531 15.454C23.0488 14.8601 23.9805 14.8601 24.5762 15.454L33.0605 23.9393C33.6543 24.5333 33.6543 25.4667 33.0605 26.0607L24.5762 34.546C23.9805 35.1399 23.0488 35.1399 22.4531 34.546C21.8594 33.952 21.8594 33.0186 22.4531 32.4246L29.8789 25Z" fill="url(%23paint_linear_565_419_0)" fill-opacity="1.000000" fill-rule="nonzero"/><path id="Arrow 4" d="M22.4531 17.5754L29.8789 25L22.4531 32.4246C21.8594 33.0186 21.8594 33.952 22.4531 34.546C23.0488 35.1399 23.9805 35.1399 24.5762 34.546L33.0605 26.0607C33.6543 25.4667 33.6543 24.5333 33.0605 23.9393L24.5762 15.454C23.9805 14.8601 23.0488 14.8601 22.4531 15.454C21.8594 16.048 21.8594 16.9814 22.4531 17.5754Z" fill="%234797FF" fill-opacity="1.000000" fill-rule="evenodd"/></svg>');
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s all ease;
+}
+
+.ratesSwiper .swiper-button-prev, .gallerySwiper .swiper-button-prev {
+  background-image: url('data:image/svg+xml,<svg width="50.000000" height="50.000000" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><desc>Created with Pixso.</desc><defs><linearGradient id="paint_linear_565_415_0" x1="25.000000" y1="0.000000" x2="25.000000" y2="50.000000" gradientUnits="userSpaceOnUse"><stop stop-color="%23FAFAFA"/><stop offset="1.000000" stop-color="%23F4F4F4"/></linearGradient></defs><circle id="Ellipse 45" cx="25.000000" cy="25.000000" r="25.000000" fill="url(%23paint_linear_565_415_0)" fill-opacity="1.000000"/><path id="Arrow 5" d="M27.5469 32.4246L20.1211 25L27.5469 17.5754C28.1406 16.9814 28.1406 16.048 27.5469 15.454C26.9512 14.8601 26.0195 14.8601 25.4238 15.454L16.9395 23.9393C16.3457 24.5333 16.3457 25.4667 16.9395 26.0607L25.4238 34.546C26.0195 35.1399 26.9512 35.1399 27.5469 34.546C28.1406 33.952 28.1406 33.0186 27.5469 32.4246Z" fill="%234797FF" fill-opacity="1.000000" fill-rule="evenodd"/></svg>');
+  width: 60px !important;
+  height: 60px !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s all ease;
+}
+
+.ratesSwiper .swiper-button-next:hover, .gallerySwiper .swiper-button-next:hover {
+  background-image: url('data:image/svg+xml,<svg width="50.000000" height="50.000000" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><desc>Created with Pixso.</desc><defs/><circle id="Ellipse 44" cx="25.000000" cy="25.000000" r="25.000000" fill="%234797FF" fill-opacity="1.000000"/><path id="Arrow 4" d="M22.4531 17.5754L29.8789 25L22.4531 32.4246C21.8594 33.0186 21.8594 33.952 22.4531 34.546C23.0488 35.1399 23.9805 35.1399 24.5762 34.546L33.0605 26.0607C33.6543 25.4667 33.6543 24.5333 33.0605 23.9393L24.5762 15.454C23.9805 14.8601 23.0488 14.8601 22.4531 15.454C21.8594 16.048 21.8594 16.9814 22.4531 17.5754Z" fill="%23FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/></svg>');
+}
+
+.ratesSwiper .swiper-button-prev:hover, .gallerySwiper .swiper-button-prev:hover {
+  background-image: url('data:image/svg+xml,<svg width="50.000000" height="50.000000" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><desc>Created with Pixso.</desc><defs><linearGradient id="paint_linear_565_420_0" x1="18.500000" y1="25.000000" x2="18.500000" y2="22.000000" gradientUnits="userSpaceOnUse"><stop stop-color="%23FAFAFA"/><stop offset="1.000000" stop-color="%23F4F4F4"/></linearGradient></defs><circle id="Ellipse 45" cx="25.000000" cy="25.000000" r="25.000000" fill="%234797FF" fill-opacity="1.000000"/><path id="Arrow 5" d="M27.5469 32.4246L20.1211 25L27.5469 17.5754C28.1406 16.9814 28.1406 16.048 27.5469 15.454C26.9512 14.8601 26.0195 14.8601 25.4238 15.454L16.9395 23.9393C16.3457 24.5333 16.3457 25.4667 16.9395 26.0607L25.4238 34.546C26.0195 35.1399 26.9512 35.1399 27.5469 34.546C28.1406 33.952 28.1406 33.0186 27.5469 32.4246Z" fill="url(%23paint_linear_565_420_0)" fill-opacity="1.000000" fill-rule="evenodd"/></svg>');
+}
+
+.ratesSwiper .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet,
+.gallerySwiper .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
+  width: 12px;
+  height: 12px;
+}
+
+.ratesSwiper .swiper-pagination-bullet-active,
+.gallerySwiper .swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: var(--swiper-pagination-color, var(--swiper-theme-color));
+  width: 14px;
+  height: 14px;
+}
+
 
 .slide-row {
   display: flex;
@@ -1923,6 +2009,7 @@ label {
   display: flex;
   flex-direction: column;
   position: relative;
+  justify-content: space-between;
 }
 
 .consult-img-row {
@@ -1941,8 +2028,6 @@ label {
 }
 
 .consult-footer {
-  position: absolute;
-  bottom: 0;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -2349,6 +2434,10 @@ label {
   font-size: 24px;
   font-weight: 400;
   line-height: 30px;
+}
+
+.faq-block-svg {
+  cursor: pointer;
 }
 
 
@@ -3727,5 +3816,67 @@ label {
     line-height: 35px;
     margin-bottom: 30px;
   }
+
+  .workimg {
+    height: 180px;
+  }
+
+  .correct, .notcorrect {
+    width: 40px;
+    height: 40px;
+  }
+
+  .ratesSwiperMob .swiper-button-next, .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+  }
+
+  .ratesSwiperMob .swiper-button-prev, .ratesSwiper .swiper-button-next {
+    position: relative;
+    z-index: 99;
+    transition: all 0.3s ease;
+  }
+  
+  .ratesSwiperMob .swiper-button-next, .gallerySwiper .swiper-button-next {
+    background-image: url('data:image/svg+xml,<svg width="50.000000" height="50.000000" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><desc>Created with Pixso.</desc><defs><linearGradient id="paint_linear_565_414_0" x1="25.000000" y1="0.000000" x2="25.000000" y2="50.000000" gradientUnits="userSpaceOnUse"><stop stop-color="%23FAFAFA"/><stop offset="1.000000" stop-color="%23F4F4F4"/></linearGradient><linearGradient id="paint_linear_565_419_0" x1="31.500000" y1="25.000000" x2="31.500000" y2="28.000000" gradientUnits="userSpaceOnUse"><stop stop-color="%23FAFAFA"/><stop offset="1.000000" stop-color="%23F4F4F4"/></linearGradient></defs><circle id="Ellipse 44" cx="25.000000" cy="25.000000" r="25.000000" fill="url(%23paint_linear_565_414_0)" fill-opacity="1.000000"/><path id="Arrow 4" d="M29.8789 25L22.4531 17.5754C21.8594 16.9814 21.8594 16.048 22.4531 15.454C23.0488 14.8601 23.9805 14.8601 24.5762 15.454L33.0605 23.9393C33.6543 24.5333 33.6543 25.4667 33.0605 26.0607L24.5762 34.546C23.9805 35.1399 23.0488 35.1399 22.4531 34.546C21.8594 33.952 21.8594 33.0186 22.4531 32.4246L29.8789 25Z" fill="url(%23paint_linear_565_419_0)" fill-opacity="1.000000" fill-rule="nonzero"/><path id="Arrow 4" d="M22.4531 17.5754L29.8789 25L22.4531 32.4246C21.8594 33.0186 21.8594 33.952 22.4531 34.546C23.0488 35.1399 23.9805 35.1399 24.5762 34.546L33.0605 26.0607C33.6543 25.4667 33.6543 24.5333 33.0605 23.9393L24.5762 15.454C23.9805 14.8601 23.0488 14.8601 22.4531 15.454C21.8594 16.048 21.8594 16.9814 22.4531 17.5754Z" fill="%234797FF" fill-opacity="1.000000" fill-rule="evenodd"/></svg>');
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s all ease;
+  }
+  
+  .ratesSwiperMob .swiper-button-prev, .gallerySwiper .swiper-button-prev {
+    background-image: url('data:image/svg+xml,<svg width="50.000000" height="50.000000" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><desc>Created with Pixso.</desc><defs><linearGradient id="paint_linear_565_415_0" x1="25.000000" y1="0.000000" x2="25.000000" y2="50.000000" gradientUnits="userSpaceOnUse"><stop stop-color="%23FAFAFA"/><stop offset="1.000000" stop-color="%23F4F4F4"/></linearGradient></defs><circle id="Ellipse 45" cx="25.000000" cy="25.000000" r="25.000000" fill="url(%23paint_linear_565_415_0)" fill-opacity="1.000000"/><path id="Arrow 5" d="M27.5469 32.4246L20.1211 25L27.5469 17.5754C28.1406 16.9814 28.1406 16.048 27.5469 15.454C26.9512 14.8601 26.0195 14.8601 25.4238 15.454L16.9395 23.9393C16.3457 24.5333 16.3457 25.4667 16.9395 26.0607L25.4238 34.546C26.0195 35.1399 26.9512 35.1399 27.5469 34.546C28.1406 33.952 28.1406 33.0186 27.5469 32.4246Z" fill="%234797FF" fill-opacity="1.000000" fill-rule="evenodd"/></svg>');
+    width: 60px ;
+    height: 60px ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s all ease;
+  }
+  
+  .ratesSwiperMob .swiper-button-next:hover, .gallerySwiper .swiper-button-next:hover {
+    background-image: url('data:image/svg+xml,<svg width="50.000000" height="50.000000" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><desc>Created with Pixso.</desc><defs/><circle id="Ellipse 44" cx="25.000000" cy="25.000000" r="25.000000" fill="%234797FF" fill-opacity="1.000000"/><path id="Arrow 4" d="M22.4531 17.5754L29.8789 25L22.4531 32.4246C21.8594 33.0186 21.8594 33.952 22.4531 34.546C23.0488 35.1399 23.9805 35.1399 24.5762 34.546L33.0605 26.0607C33.6543 25.4667 33.6543 24.5333 33.0605 23.9393L24.5762 15.454C23.9805 14.8601 23.0488 14.8601 22.4531 15.454C21.8594 16.048 21.8594 16.9814 22.4531 17.5754Z" fill="%23FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/></svg>');
+  }
+  
+  .ratesSwiperMob .swiper-button-prev:hover, .gallerySwiper .swiper-button-prev:hover {
+    background-image: url('data:image/svg+xml,<svg width="50.000000" height="50.000000" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><desc>Created with Pixso.</desc><defs><linearGradient id="paint_linear_565_420_0" x1="18.500000" y1="25.000000" x2="18.500000" y2="22.000000" gradientUnits="userSpaceOnUse"><stop stop-color="%23FAFAFA"/><stop offset="1.000000" stop-color="%23F4F4F4"/></linearGradient></defs><circle id="Ellipse 45" cx="25.000000" cy="25.000000" r="25.000000" fill="%234797FF" fill-opacity="1.000000"/><path id="Arrow 5" d="M27.5469 32.4246L20.1211 25L27.5469 17.5754C28.1406 16.9814 28.1406 16.048 27.5469 15.454C26.9512 14.8601 26.0195 14.8601 25.4238 15.454L16.9395 23.9393C16.3457 24.5333 16.3457 25.4667 16.9395 26.0607L25.4238 34.546C26.0195 35.1399 26.9512 35.1399 27.5469 34.546C28.1406 33.952 28.1406 33.0186 27.5469 32.4246Z" fill="url(%23paint_linear_565_420_0)" fill-opacity="1.000000" fill-rule="evenodd"/></svg>');
+  }
+  
+  .ratesSwiperMob .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet,
+  .gallerySwiperMob .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
+    width: 12px;
+    height: 12px;
+  }
+  
+  .ratesSwiperMob .swiper-pagination-bullet-active,
+  .gallerySwiperMob .swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: var(--swiper-pagination-color, var(--swiper-theme-color));
+    width: 14px;
+    height: 14px;
+  }
+  
 
 }
