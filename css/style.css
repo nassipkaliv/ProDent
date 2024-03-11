@@ -3235,6 +3235,7 @@ label {
     font-size: 20px;
     font-weight: 500;
     line-height: 25px;
+    width: 80%;
   }
 
   .vacancy-svg {
@@ -3884,6 +3885,10 @@ label {
 
   .rates-footer {
     margin-top: 40px;
+  }
+
+  .clinic-img {
+    margin-right: 0px;
   }
   
 
