@@ -1183,7 +1183,7 @@
           </div>
         </div>
         <div class="col-lg-6 col-md-12 d-flex align-items-center justify-content-center">
-          <div id="map"></div>
+          <div id="map1"></div>
         </div>
       </div>
     </div>
@@ -1357,40 +1357,6 @@
 <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="swiper/swiper-bundle.min.js"></script>
 <script src="https://api-maps.yandex.ru/2.1?apikey=853641f4-0f80-47e2-b733-ea92cfc0a151&load=package.full&lang=ru_RU"></script>
-
-<script>
-  // Ждем загрузки iframe с картой
-  document.getElementById('mapIframe').onload = function() {
-      // Получаем доступ к контенту внутри iframe
-      var mapIframeContent = document.getElementById('mapIframe').contentDocument || document.getElementById('mapIframe').contentWindow.document;
-
-      // Скрываем кнопку пробок
-      var trafficButton = mapIframeContent.querySelector('.ymaps-traffic__button');
-      if (trafficButton) {
-          trafficButton.style.display = 'none';
-      }
-
-      // Скрываем линейку
-      var rulerButton = mapIframeContent.querySelector('.ymaps-ruler__control');
-      if (rulerButton) {
-          rulerButton.style.display = 'none';
-      }
-
-      // Скрываем кнопки приблизить и отдалить
-      var zoomButtons = mapIframeContent.querySelectorAll('.ymaps-zoom');
-      if (zoomButtons.length > 0) {
-          zoomButtons.forEach(function(button) {
-              button.style.display = 'none';
-          });
-      }
-
-      // Скрываем кнопку "Мое местоположение"
-      var myLocationButton = mapIframeContent.querySelector('.ymaps-geolocation-button');
-      if (myLocationButton) {
-          myLocationButton.style.display = 'none';
-      }
-  };
-</script>
 <script src="js/app.js"></script>
 </body>
 </html>
