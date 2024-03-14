@@ -617,3 +617,21 @@ function toggleIcon6() {
   var faqBlock = document.getElementById('faq-block6');
   faqBlock.classList.toggle('open');
 }
+
+ymaps.ready(init);
+
+function init() {
+    var myMap = new ymaps.Map("map", {
+        center: [51.138392, 71.458421], // Координаты центра карты
+        zoom: 16, // Уровень масштабирования
+        controls: [] // Убираем все кнопки управления с карты
+    });
+
+    // Добавляем метку
+    myMap.geoObjects.add(new ymaps.Placemark([51.138392, 71.458421], {
+        balloonContent: 'Pro Dent - стоматологическая клиника в Астане'
+    }, {
+        preset: 'islands#icon',
+        iconColor: '#0095b6'
+    }));
+}

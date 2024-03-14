@@ -1183,7 +1183,7 @@
           </div>
         </div>
         <div class="col-lg-6 col-md-12 d-flex align-items-center justify-content-center">
-          <div style="position:relative;overflow:hidden; border-radius: 24px;"><a href="https://yandex.ru/maps/org/pro_dent/214086813627/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Pro Dent</a><a href="https://yandex.ru/maps/163/astana/category/dental_clinic/184106132/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Стоматологическая клиника в Астане</a><iframe src="https://yandex.ru/map-widget/v1/org/pro_dent/214086813627/?ll=71.458421%2C51.138392&z=16" width="610" height="336" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+          <div id="map"></div>
         </div>
       </div>
     </div>
@@ -1356,6 +1356,41 @@
   crossorigin="anonymous"></script>
 <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="swiper/swiper-bundle.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1?apikey=853641f4-0f80-47e2-b733-ea92cfc0a151&load=package.full&lang=ru_RU"></script>
+
+<script>
+  // Ждем загрузки iframe с картой
+  document.getElementById('mapIframe').onload = function() {
+      // Получаем доступ к контенту внутри iframe
+      var mapIframeContent = document.getElementById('mapIframe').contentDocument || document.getElementById('mapIframe').contentWindow.document;
+
+      // Скрываем кнопку пробок
+      var trafficButton = mapIframeContent.querySelector('.ymaps-traffic__button');
+      if (trafficButton) {
+          trafficButton.style.display = 'none';
+      }
+
+      // Скрываем линейку
+      var rulerButton = mapIframeContent.querySelector('.ymaps-ruler__control');
+      if (rulerButton) {
+          rulerButton.style.display = 'none';
+      }
+
+      // Скрываем кнопки приблизить и отдалить
+      var zoomButtons = mapIframeContent.querySelectorAll('.ymaps-zoom');
+      if (zoomButtons.length > 0) {
+          zoomButtons.forEach(function(button) {
+              button.style.display = 'none';
+          });
+      }
+
+      // Скрываем кнопку "Мое местоположение"
+      var myLocationButton = mapIframeContent.querySelector('.ymaps-geolocation-button');
+      if (myLocationButton) {
+          myLocationButton.style.display = 'none';
+      }
+  };
+</script>
 <script src="js/app.js"></script>
 </body>
 </html>
