@@ -285,241 +285,294 @@ function toggleSVG3() {
 }
 
 
-function startCountdownTimer() {
-  // Timer 1
-  var daysElement1 = document.getElementById("days1");
-  var hoursElement1 = document.getElementById("hours1");
-  var minutesElement1 = document.getElementById("minutes1");
-  var secondsElement1 = document.getElementById("seconds1");
+function updateTimer1() {
+  const daysElement1 = document.getElementById("days1");
+  const hoursElement1 = document.getElementById("hours1");
+  const minutesElement1 = document.getElementById("minutes1");
+  const secondsElement1 = document.getElementById("seconds1");
 
   if (daysElement1 && hoursElement1 && minutesElement1 && secondsElement1) {
-      var deadline1 = new Date("March 31, 2024 00:00:00").getTime();
+      let days1 = parseInt(daysElement1.innerText);
+      let hours1 = parseInt(hoursElement1.innerText);
+      let minutes1 = parseInt(minutesElement1.innerText);
+      let seconds1 = parseInt(secondsElement1.innerText);
 
-      var x1 = setInterval(function () {
-          var now1 = new Date().getTime();
-          var timeRemaining1 = deadline1 - now1;
-          var days1 = Math.floor(timeRemaining1 / (1000 * 60 * 60 * 24));
-          var hours1 = Math.floor((timeRemaining1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes1 = Math.floor((timeRemaining1 % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds1 = Math.floor((timeRemaining1 % (1000 * 60)) / 1000);
-
-          if (daysElement1) {
-              daysElement1.innerHTML = days1;
-          }
-          if (hoursElement1) {
-              hoursElement1.innerHTML = hours1;
-          }
-          if (minutesElement1) {
-              minutesElement1.innerHTML = minutes1;
-          }
-          if (secondsElement1) {
-              secondsElement1.innerHTML = seconds1;
-          }
-
-          if (timeRemaining1 < 0) {
-              clearInterval(x1);
-              if (daysElement1) {
-                  document.getElementById("timer1").innerHTML = "Акция завершена!";
+      if (seconds1 > 0) {
+          seconds1--;
+      } else {
+          if (minutes1 > 0) {
+              minutes1--;
+              seconds1 = 59;
+          } else {
+              if (hours1 > 0) {
+                  hours1--;
+                  minutes1 = 59;
+                  seconds1 = 59;
+              } else {
+                  if (days1 > 0) {
+                      days1--;
+                      hours1 = 23;
+                      minutes1 = 59;
+                      seconds1 = 59;
+                  } else {
+                      clearInterval(timerInterval1);
+                      document.getElementById("timer1").innerText = "Акция завершена!";
+                      return;
+                  }
               }
           }
-      }, 1000);
-  }
+      }
 
-  // Timer 2
-  var daysElement2 = document.getElementById("days2");
-  var hoursElement2 = document.getElementById("hours2");
-  var minutesElement2 = document.getElementById("minutes2");
-  var secondsElement2 = document.getElementById("seconds2");
-
-  if (daysElement2 && hoursElement2 && minutesElement2 && secondsElement2) {
-      var deadline2 = new Date("March 26, 2024 00:00:00").getTime();
-
-      var x2 = setInterval(function () {
-          var now2 = new Date().getTime();
-          var timeRemaining2 = deadline2 - now2;
-          var days2 = Math.floor(timeRemaining2 / (1000 * 60 * 60 * 24));
-          var hours2 = Math.floor((timeRemaining2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes2 = Math.floor((timeRemaining2 % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds2 = Math.floor((timeRemaining2 % (1000 * 60)) / 1000);
-
-          if (daysElement2) {
-              daysElement2.innerHTML = days2;
-          }
-          if (hoursElement2) {
-              hoursElement2.innerHTML = hours2;
-          }
-          if (minutesElement2) {
-              minutesElement2.innerHTML = minutes2;
-          }
-          if (secondsElement2) {
-              secondsElement2.innerHTML = seconds2;
-          }
-
-          if (timeRemaining2 < 0) {
-              clearInterval(x2);
-              if (daysElement2) {
-                  document.getElementById("timer2").innerHTML = "Акция завершена!";
-              }
-          }
-      }, 1000);
-  }
-
-  // Timer 3
-  var daysElement3 = document.getElementById("days3");
-  var hoursElement3 = document.getElementById("hours3");
-  var minutesElement3 = document.getElementById("minutes3");
-  var secondsElement3 = document.getElementById("seconds3");
-
-  if (daysElement3 && hoursElement3 && minutesElement3 && secondsElement3) {
-      var deadline3 = new Date("March 15, 2024 00:00:00").getTime();
-
-      var x3 = setInterval(function () {
-          var now3 = new Date().getTime();
-          var timeRemaining3 = deadline3 - now3;
-          var days3 = Math.floor(timeRemaining3 / (1000 * 60 * 60 * 24));
-          var hours3 = Math.floor((timeRemaining3 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes3 = Math.floor((timeRemaining3 % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds3 = Math.floor((timeRemaining3 % (1000 * 60)) / 1000);
-
-          if (daysElement3) {
-              daysElement3.innerHTML = days3;
-          }
-          if (hoursElement3) {
-              hoursElement3.innerHTML = hours3;
-          }
-          if (minutesElement3) {
-              minutesElement3.innerHTML = minutes3;
-          }
-          if (secondsElement3) {
-              secondsElement3.innerHTML = seconds3;
-          }
-
-          if (timeRemaining3 < 0) {
-              clearInterval(x3);
-              if (daysElement3) {
-                  document.getElementById("timer3").innerHTML = "Акция завершена!";
-              }
-          }
-      }, 1000);
-  }
-
-  // Timer 1 Mobile
-  var daysElement1mob = document.getElementById("days1mob");
-  var hoursElement1mob = document.getElementById("hours1mob");
-  var minutesElement1mob = document.getElementById("minutes1mob");
-  var secondsElement1mob = document.getElementById("seconds1mob");
-
-  if (daysElement1mob && hoursElement1mob && minutesElement1mob && secondsElement1mob) {
-      var deadline1mob = new Date("March 31, 2024 00:00:00").getTime();
-
-      var x1mob = setInterval(function () {
-          var now1mob = new Date().getTime();
-          var timeRemaining1mob = deadline1mob - now1mob;
-          var days1mob = Math.floor(timeRemaining1mob / (1000 * 60 * 60 * 24));
-          var hours1mob = Math.floor((timeRemaining1mob % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes1mob = Math.floor((timeRemaining1mob % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds1mob = Math.floor((timeRemaining1mob % (1000 * 60)) / 1000);
-
-          if (daysElement1mob) {
-              daysElement1mob.innerHTML = days1mob;
-          }
-          if (hoursElement1mob) {
-              hoursElement1mob.innerHTML = hours1mob;
-          }
-          if (minutesElement1mob) {
-              minutesElement1mob.innerHTML = minutes1mob;
-          }
-          if (secondsElement1mob) {
-              secondsElement1mob.innerHTML = seconds1mob;
-          }
-
-          if (timeRemaining1mob < 0) {
-              clearInterval(x1mob);
-              if (daysElement1mob) {
-                  document.getElementById("timer1mob").innerHTML = "Акция завершена!";
-              }
-          }
-      }, 1000);
-  }
-
-  // Timer 2 Mobile
-  var daysElement2mob = document.getElementById("days2mob");
-  var hoursElement2mob = document.getElementById("hours2mob");
-  var minutesElement2mob = document.getElementById("minutes2mob");
-  var secondsElement2mob = document.getElementById("seconds2mob");
-
-  if (daysElement2mob && hoursElement2mob && minutesElement2mob && secondsElement2mob) {
-      var deadline2mob = new Date("March 26, 2024 00:00:00").getTime();
-
-      var x2mob = setInterval(function () {
-          var now2mob = new Date().getTime();
-          var timeRemaining2mob = deadline2mob - now2mob;
-          var days2mob = Math.floor(timeRemaining2mob / (1000 * 60 * 60 * 24));
-          var hours2mob = Math.floor((timeRemaining2mob % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes2mob = Math.floor((timeRemaining2mob % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds2mob = Math.floor((timeRemaining2mob % (1000 * 60)) / 1000);
-
-          if (daysElement2mob) {
-              daysElement2mob.innerHTML = days2mob;
-          }
-          if (hoursElement2mob) {
-              hoursElement2mob.innerHTML = hours2mob;
-          }
-          if (minutesElement2mob) {
-              minutesElement2mob.innerHTML = minutes2mob;
-          }
-          if (secondsElement2mob) {
-              secondsElement2mob.innerHTML = seconds2mob;
-          }
-
-          if (timeRemaining2mob < 0) {
-              clearInterval(x2mob);
-              if (daysElement2mob) {
-                  document.getElementById("timer2mob").innerHTML = "Акция завершена!";
-              }
-          }
-      }, 1000);
-  }
-
-  // Timer 3 Mobile
-  var daysElement3mob = document.getElementById("days3mob");
-  var hoursElement3mob = document.getElementById("hours3mob");
-  var minutesElement3mob = document.getElementById("minutes3mob");
-  var secondsElement3mob = document.getElementById("seconds3mob");
-
-  if (daysElement3mob && hoursElement3mob && minutesElement3mob && secondsElement3mob) {
-      var deadline3mob = new Date("March 15, 2024 00:00:00").getTime();
-
-      var x3mob = setInterval(function () {
-          var now3mob = new Date().getTime();
-          var timeRemaining3mob = deadline3mob - now3mob;
-          var days3mob = Math.floor(timeRemaining3mob / (1000 * 60 * 60 * 24));
-          var hours3mob = Math.floor((timeRemaining3mob % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes3mob = Math.floor((timeRemaining3mob % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds3mob = Math.floor((timeRemaining3mob % (1000 * 60)) / 1000);
-
-          if (daysElement3mob) {
-              daysElement3mob.innerHTML = days3mob;
-          }
-          if (hoursElement3mob) {
-              hoursElement3mob.innerHTML = hours3mob;
-          }
-          if (minutesElement3mob) {
-              minutesElement3mob.innerHTML = minutes3mob;
-          }
-          if (secondsElement3mob) {
-              secondsElement3mob.innerHTML = seconds3mob;
-          }
-
-          if (timeRemaining3mob < 0) {
-              clearInterval(x3mob);
-              if (daysElement3mob) {
-                  document.getElementById("timer3mob").innerHTML = "Акция завершена!";
-              }
-          }
-      }, 1000);
+      daysElement1.innerText = days1;
+      hoursElement1.innerText = hours1;
+      minutesElement1.innerText = minutes1;
+      secondsElement1.innerText = seconds1;
   }
 }
+
+const timerInterval1 = setInterval(updateTimer1, 1000);
+
+
+function updateTimer2() {
+  const daysElement2 = document.getElementById("days2");
+  const hoursElement2 = document.getElementById("hours2");
+  const minutesElement2 = document.getElementById("minutes2");
+  const secondsElement2 = document.getElementById("seconds2");
+
+  if (daysElement2 && hoursElement2 && minutesElement2 && secondsElement2) {
+      let days2 = parseInt(daysElement2.innerText);
+      let hours2 = parseInt(hoursElement2.innerText);
+      let minutes2 = parseInt(minutesElement2.innerText);
+      let seconds2 = parseInt(secondsElement2.innerText);
+
+      if (seconds2 > 0) {
+          seconds2--;
+      } else {
+          if (minutes2 > 0) {
+              minutes2--;
+              seconds2 = 59;
+          } else {
+              if (hours2 > 0) {
+                  hours2--;
+                  minutes2 = 59;
+                  seconds2 = 59;
+              } else {
+                  if (days2 > 0) {
+                      days2--;
+                      hours2 = 23;
+                      minutes2 = 59;
+                      seconds2 = 59;
+                  } else {
+                      clearInterval(timerInterval2);
+                      document.getElementById("timer2").innerText = "Акция завершена!";
+                      return;
+                  }
+              }
+          }
+      }
+
+      daysElement2.innerText = days2;
+      hoursElement2.innerText = hours2;
+      minutesElement2.innerText = minutes2;
+      secondsElement2.innerText = seconds2;
+  }
+}
+
+const timerInterval2 = setInterval(updateTimer2, 1000);
+
+
+function updateTimer3() {
+  const daysElement3 = document.getElementById("days3");
+  const hoursElement3 = document.getElementById("hours3");
+  const minutesElement3 = document.getElementById("minutes3");
+  const secondsElement3 = document.getElementById("seconds3");
+
+  if (daysElement3 && hoursElement3 && minutesElement3 && secondsElement3) {
+      let days3 = parseInt(daysElement3.innerText);
+      let hours3 = parseInt(hoursElement3.innerText);
+      let minutes3 = parseInt(minutesElement3.innerText);
+      let seconds3 = parseInt(secondsElement3.innerText);
+
+      if (seconds3 > 0) {
+          seconds3--;
+      } else {
+          if (minutes3 > 0) {
+              minutes3--;
+              seconds3 = 59;
+          } else {
+              if (hours3 > 0) {
+                  hours3--;
+                  minutes3 = 59;
+                  seconds3 = 59;
+              } else {
+                  if (days3 > 0) {
+                      days3--;
+                      hours3 = 23;
+                      minutes3 = 59;
+                      seconds3 = 59;
+                  } else {
+                      clearInterval(timerInterval3);
+                      document.getElementById("timer3").innerText = "Акция завершена!";
+                      return;
+                  }
+              }
+          }
+      }
+
+      daysElement3.innerText = days3;
+      hoursElement3.innerText = hours3;
+      minutesElement3.innerText = minutes3;
+      secondsElement3.innerText = seconds3;
+  }
+}
+
+const timerInterval3 = setInterval(updateTimer3, 1000);
+
+
+
+function updateTimer1Mob() {
+  const daysElement1 = document.getElementById("days1mob");
+  const hoursElement1 = document.getElementById("hours1mob");
+  const minutesElement1 = document.getElementById("minutes1mob");
+  const secondsElement1 = document.getElementById("seconds1mob");
+
+  if (daysElement1 && hoursElement1 && minutesElement1 && secondsElement1) {
+      let days1 = parseInt(daysElement1.innerText);
+      let hours1 = parseInt(hoursElement1.innerText);
+      let minutes1 = parseInt(minutesElement1.innerText);
+      let seconds1 = parseInt(secondsElement1.innerText);
+
+      if (seconds1 > 0) {
+          seconds1--;
+      } else {
+          if (minutes1 > 0) {
+              minutes1--;
+              seconds1 = 59;
+          } else {
+              if (hours1 > 0) {
+                  hours1--;
+                  minutes1 = 59;
+                  seconds1 = 59;
+              } else {
+                  if (days1 > 0) {
+                      days1--;
+                      hours1 = 23;
+                      minutes1 = 59;
+                      seconds1 = 59;
+                  } else {
+                      clearInterval(timerInterval1Mob);
+                      document.getElementById("timer1mob").innerText = "Акция завершена!";
+                      return;
+                  }
+              }
+          }
+      }
+
+      daysElement1.innerText = days1;
+      hoursElement1.innerText = hours1;
+      minutesElement1.innerText = minutes1;
+      secondsElement1.innerText = seconds1;
+  }
+}
+
+const timerInterval1Mob = setInterval(updateTimer1Mob, 1000);
+
+function updateTimer2Mob() {
+  const daysElement2 = document.getElementById("days2mob");
+  const hoursElement2 = document.getElementById("hours2mob");
+  const minutesElement2 = document.getElementById("minutes2mob");
+  const secondsElement2 = document.getElementById("seconds2mob");
+
+  if (daysElement2 && hoursElement2 && minutesElement2 && secondsElement2) {
+      let days2 = parseInt(daysElement2.innerText);
+      let hours2 = parseInt(hoursElement2.innerText);
+      let minutes2 = parseInt(minutesElement2.innerText);
+      let seconds2 = parseInt(secondsElement2.innerText);
+
+      if (seconds2 > 0) {
+          seconds2--;
+      } else {
+          if (minutes2 > 0) {
+              minutes2--;
+              seconds2 = 59;
+          } else {
+              if (hours2 > 0) {
+                  hours2--;
+                  minutes2 = 59;
+                  seconds2 = 59;
+              } else {
+                  if (days2 > 0) {
+                      days2--;
+                      hours2 = 23;
+                      minutes2 = 59;
+                      seconds2 = 59;
+                  } else {
+                      clearInterval(timerInterval2Mob);
+                      document.getElementById("timer2mob").innerText = "Акция завершена!";
+                      return;
+                  }
+              }
+          }
+      }
+
+      daysElement2.innerText = days2;
+      hoursElement2.innerText = hours2;
+      minutesElement2.innerText = minutes2;
+      secondsElement2.innerText = seconds2;
+  }
+}
+
+const timerInterval2Mob = setInterval(updateTimer2Mob, 1000);
+
+
+  // Timer 3 Mobile
+  function updateTimer3Mob() {
+    const daysElement3 = document.getElementById("days3mob");
+    const hoursElement3 = document.getElementById("hours3mob");
+    const minutesElement3 = document.getElementById("minutes3mob");
+    const secondsElement3 = document.getElementById("seconds3mob");
+
+    if (daysElement3 && hoursElement3 && minutesElement3 && secondsElement3) {
+        let days3 = parseInt(daysElement3.innerText);
+        let hours3 = parseInt(hoursElement3.innerText);
+        let minutes3 = parseInt(minutesElement3.innerText);
+        let seconds3 = parseInt(secondsElement3.innerText);
+
+        if (seconds3 > 0) {
+            seconds3--;
+        } else {
+            if (minutes3 > 0) {
+                minutes3--;
+                seconds3 = 59;
+            } else {
+                if (hours3 > 0) {
+                    hours3--;
+                    minutes3 = 59;
+                    seconds3 = 59;
+                } else {
+                    if (days3 > 0) {
+                        days3--;
+                        hours3 = 23;
+                        minutes3 = 59;
+                        seconds3 = 59;
+                    } else {
+                        clearInterval(timerInterval3Mob);
+                        document.getElementById("timer3mob").innerText = "Акция завершена!";
+                        return;
+                    }
+                }
+            }
+        }
+
+        daysElement3.innerText = days3;
+        hoursElement3.innerText = hours3;
+        minutesElement3.innerText = minutes3;
+        secondsElement3.innerText = seconds3;
+    }
+}
+
+const timerInterval3Mob = setInterval(updateTimer3Mob, 1000);
+
 
 window.onload = startCountdownTimer;
 
