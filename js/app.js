@@ -1,3 +1,37 @@
+ymaps.ready(function() {
+  // Инициализация первой карты с идентификатором "map1"
+  initMap("map1");
+
+  // Инициализация второй карты с идентификатором "map2"
+  initMap("map2");
+
+  // Инициализация третьей карты с идентификатором "map3"
+  initMap("map3");
+
+  initMap("map4");
+
+  initMap("map5");
+
+  initMap("map6");
+
+  // Функция для инициализации карты с заданным идентификатором
+  function initMap(mapId) {
+      var myMap = new ymaps.Map(mapId, {
+          center: [51.138392, 71.458421], // Координаты центра карты
+          zoom: 16, // Уровень масштабирования
+          controls: [] // Убираем все кнопки управления с карты
+      });
+
+      // Добавляем метку
+      myMap.geoObjects.add(new ymaps.Placemark([51.138392, 71.458421], {
+          balloonContent: 'Pro Dent - стоматологическая клиника в Астане'
+      }, {
+          preset: 'islands#icon',
+          iconColor: '#0095b6'
+      }));
+  }
+});
+
 const swiper = new Swiper('.sample-slider', {
   loop: true,
   slidesPerView: 1.12,
@@ -671,36 +705,3 @@ function toggleIcon6() {
   faqBlock.classList.toggle('open');
 }
 
-ymaps.ready(function() {
-  // Инициализация первой карты с идентификатором "map1"
-  initMap("map1");
-
-  // Инициализация второй карты с идентификатором "map2"
-  initMap("map2");
-
-  // Инициализация третьей карты с идентификатором "map3"
-  initMap("map3");
-
-  initMap("map4");
-
-  initMap("map5");
-
-  initMap("map6");
-
-  // Функция для инициализации карты с заданным идентификатором
-  function initMap(mapId) {
-      var myMap = new ymaps.Map(mapId, {
-          center: [51.138392, 71.458421], // Координаты центра карты
-          zoom: 16, // Уровень масштабирования
-          controls: [] // Убираем все кнопки управления с карты
-      });
-
-      // Добавляем метку
-      myMap.geoObjects.add(new ymaps.Placemark([51.138392, 71.458421], {
-          balloonContent: 'Pro Dent - стоматологическая клиника в Астане'
-      }, {
-          preset: 'islands#icon',
-          iconColor: '#0095b6'
-      }));
-  }
-});
