@@ -714,7 +714,7 @@ body {
   color: #D1D1D1;
 }
 
-label {
+.formLabel {
   color: var(--white, #FFF);
   font-family: "Averta Demo PE Cutted Demo";
   font-size: 24px;
