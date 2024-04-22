@@ -17,13 +17,13 @@ ymaps.ready(function() {
   // Функция для инициализации карты с заданным идентификатором
   function initMap(mapId) {
       var myMap = new ymaps.Map(mapId, {
-          center: [51.138392, 71.458421], // Координаты центра карты
+          center: [55.771282, 37.846760], // Координаты центра карты
           zoom: 16, // Уровень масштабирования
           controls: [] // Убираем все кнопки управления с карты
       });
 
       // Добавляем метку
-      myMap.geoObjects.add(new ymaps.Placemark([51.138392, 71.458421], {
+      myMap.geoObjects.add(new ymaps.Placemark([55.771282, 37.846760], {
           balloonContent: 'Pro Dent - стоматологическая клиника в Астане'
       }, {
           preset: 'islands#icon',
