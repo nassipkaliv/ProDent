@@ -52,8 +52,17 @@ document.getElementById('svgTrigger').addEventListener('click', function() {
   
   // Update the HTML content with the new SVG
   svgElement.outerHTML = newSvg;
+  
+  // Получаем ссылку на кнопку "Записаться на прием"
+  var appointmentButton = document.querySelector('.btn.menu-btn.d-flex');
+  
+  // Изменяем текст кнопки
+  if (isOriginalSvg) {
+    appointmentButton.textContent = 'Найти';
+  } else {
+    appointmentButton.textContent = 'Записаться на прием';
+  }
 });
-
 const swiper = new Swiper('.sample-slider', {
   loop: true,
   slidesPerView: 1.12,
